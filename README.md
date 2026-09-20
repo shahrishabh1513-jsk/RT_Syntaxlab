@@ -24,7 +24,7 @@
 <a href="https://github.com/shahrishabh1513-jsk/RT_Syntaxlab"><img src="https://img.shields.io/badge/REPOSITORY-View_Code-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 <a href="https://github.com/shahrishabh1513-jsk/RT_Syntaxlab/stargazers"><img src="https://img.shields.io/badge/STAR-Support_This_Repo-10B981?style=for-the-badge&logo=github&logoColor=white"/></a>
 
-<br/><br/>
+<br/>
 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
@@ -73,7 +73,7 @@
 <div align="center">
 
 <a href="https://shahrishabh1513-jsk.github.io/RT_Syntaxlab/" target="_blank">
-<img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fshahrishabh1513-jsk.github.io%2FRT_Syntaxlab%2F?w=1200" width="85%" style="border-radius:10px; box-shadow: 0 6px 18px rgba(0,0,0,0.2);"/>
+<img src="https://github.com/user-attachments/assets/9438c67c-f3cc-4950-89dc-4a04ee48c44c" width="85%" style="border-radius:10px; box-shadow: 0 6px 18px rgba(0,0,0,0.2);"/>
 </a>
 
 <sub>👆 Click to explore the live site</sub>
