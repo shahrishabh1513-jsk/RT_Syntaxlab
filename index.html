@@ -3,111 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyntaxLab | Learn Programming Easily</title>
+    <title>RT_SYNTAXTLAB | Learn Programming the Easy Way</title>
+    <meta name="description" content="RT_SYNTAXTLAB - Learn HTML, CSS, JavaScript, Java, PHP, Python, C, C++ and SQL with clear explanations and code examples.">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-<!-- Animated Background Icons -->
-<div class="background-icons">
-    <div class="floating-icon"><i class="fab fa-python"></i></div>
-    <div class="floating-icon"><i class="fab fa-js"></i></div>
-    <div class="floating-icon"><i class="fab fa-java"></i></div>
-    <div class="floating-icon"><i class="fas fa-database"></i></div>
-    <div class="floating-icon"><i class="fab fa-php"></i></div>
-    <div class="floating-icon"><i class="fab fa-html5"></i></div>
-    <div class="floating-icon"><i class="fab fa-css3-alt"></i></div>
-    <div class="floating-icon"><i class="fas fa-code"></i></div>
-</div>
-
 <nav class="navbar">
     <div class="nav-container">
         <div class="logo-area" onclick="location.href='index.html'">
-            <div class="logo-icon"><i class="fas fa-laptop-code"></i></div>
-            <span class="logo-text">SyntaxLab</span>
+            <div class="logo-icon"><img src="logo.svg" alt="RT_SYNTAXTLAB logo"></div>
+            <span class="logo-text">RT_<span>SYNTAXTLAB</span></span>
         </div>
         <div class="nav-links">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="html.html" class="nav-link">HTML</a>
+            <a href="css.html" class="nav-link">CSS</a>
+            <a href="python.html" class="nav-link">Python</a>
+            <a href="javascript.html" class="nav-link">JavaScript</a>
+            <a href="sql.html" class="nav-link">SQL</a>
+            <a href="#subjects" class="nav-cta">Explore All <i class="fas fa-arrow-right"></i></a>
         </div>
+        <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
 </nav>
 
 <section class="hero">
-    <h1>Learn Programming Easily</h1>
-    <p class="hero-subtitle">Master 9+ programming languages with interactive examples, code snippets, and live progress tracking.</p>
+    <span class="eyebrow">9 Languages · 100% Free</span>
+    <h1>Learn Programming, <span>The Easy Way</span></h1>
+    <p class="hero-subtitle">RT_SYNTAXTLAB is a clean, distraction-free tutorial hub covering HTML, CSS, JavaScript, Java, PHP, Python, C, C++ and SQL — with clear explanations, runnable code examples, and live progress tracking for every topic.</p>
+    <div class="hero-actions">
+        <a href="html.html" class="btn btn-primary"><i class="fas fa-play"></i> Start with HTML</a>
+        <a href="#subjects" class="btn btn-outline"><i class="fas fa-list"></i> Browse Languages</a>
+    </div>
+    <div class="hero-stats">
+        <div class="stat"><b>9+</b><span>Languages</span></div>
+        <div class="stat"><b>150+</b><span>Topics Covered</span></div>
+        <div class="stat"><b>200+</b><span>Code Examples</span></div>
+        <div class="stat"><b>100%</b><span>Free Forever</span></div>
+    </div>
 </section>
 
-<section class="subjects-section">
-    <h2 class="section-title"><i class="fas fa-cubes"></i> Choose Your Language</h2>
+<section class="subjects-section" id="subjects">
+    <h2 class="section-title">Choose Your Language</h2>
+    <p class="section-sub">Pick a track below — every page includes a full topic list, code samples and a link to a deeper GeeksforGeeks reference.</p>
     <div class="cards-grid">
-        <!-- HTML Card -->
-        <div class="lang-card" onclick="location.href='html.html'">
+
+        <div class="lang-card" style="--card-color:#E44D26" onclick="location.href='html.html'">
             <div class="card-icon"><i class="fab fa-html5" style="color:#E44D26;"></i></div>
             <h3>HTML</h3>
-            <p>Structure the web <span class="new-badge">#HTMLCraft</span></p>
+            <p>Structure the web with semantic markup.</p>
+            <span class="new-badge">#HTMLCraft</span>
+            <i class="fas fa-arrow-right card-arrow"></i>
         </div>
-        
-        <!-- CSS Card -->
-        <div class="lang-card" onclick="location.href='css.html'">
+
+        <div class="lang-card" style="--card-color:#264de4" onclick="location.href='css.html'">
             <div class="card-icon"><i class="fab fa-css3-alt" style="color:#264de4;"></i></div>
             <h3>CSS</h3>
-            <p>Style & design <span class="new-badge">#DesignWithCSS</span></p>
+            <p>Style, layout and design beautiful pages.</p>
+            <span class="new-badge">#DesignWithCSS</span>
+            <i class="fas fa-arrow-right card-arrow"></i>
         </div>
-        
-        <!-- PYTHON Card (NEW - Replaced SCSS) -->
-        <div class="lang-card" onclick="location.href='python.html'">
+
+        <div class="lang-card" style="--card-color:#3776AB" onclick="location.href='python.html'">
             <div class="card-icon"><i class="fab fa-python" style="color:#3776AB;"></i></div>
             <h3>Python</h3>
-            <p>Simple & powerful <span class="new-badge">#PythonMagic</span></p>
+            <p>Simple, readable and powerful for everyone.</p>
+            <span class="new-badge">#PythonMagic</span>
+            <i class="fas fa-arrow-right card-arrow"></i>
         </div>
-        
-        <!-- JavaScript Card -->
-        <div class="lang-card" onclick="location.href='javascript.html'">
-            <div class="card-icon"><i class="fab fa-js" style="color:#F7DF1E;"></i></div>
+
+        <div class="lang-card" style="--card-color:#d4ac0d" onclick="location.href='javascript.html'">
+            <div class="card-icon"><i class="fab fa-js" style="color:#d4ac0d;"></i></div>
             <h3>JavaScript</h3>
-            <p>Interactive magic <span class="new-badge">#JavaScriptVibes</span></p>
+            <p>Bring interactivity and logic to the browser.</p>
+            <span class="new-badge">#JavaScriptVibes</span>
+            <i class="fas fa-arrow-right card-arrow"></i>
         </div>
-        
-        <!-- PHP Card -->
-        <div class="lang-card" onclick="location.href='php.html'">
+
+        <div class="lang-card" style="--card-color:#777BB4" onclick="location.href='php.html'">
             <div class="card-icon"><i class="fab fa-php" style="color:#777BB4;"></i></div>
             <h3>PHP</h3>
-            <p>Server-side power <span class="new-badge">#BackendWithPHP</span></p>
+            <p>Server-side scripting for dynamic websites.</p>
+            <span class="new-badge">#BackendWithPHP</span>
+            <i class="fas fa-arrow-right card-arrow"></i>
         </div>
-        
-        <!-- C Card -->
-        <div class="lang-card" onclick="location.href='c.html'">
+
+        <div class="lang-card" style="--card-color:#00599C" onclick="location.href='c.html'">
             <div class="card-icon"><i class="fas fa-code" style="color:#00599C;"></i></div>
             <h3>C</h3>
-            <p>System programming <span class="new-badge">#LowLevelLogic</span></p>
+            <p>Understand memory and system programming.</p>
+            <span class="new-badge">#LowLevelLogic</span>
+            <i class="fas fa-arrow-right card-arrow"></i>
         </div>
-        
-        <!-- C++ Card -->
-        <div class="lang-card" onclick="location.href='cpp.html'">
-            <div class="card-icon"><i class="fas fa-code-branch" style="color:#00599C;"></i></div>
+
+        <div class="lang-card" style="--card-color:#004482" onclick="location.href='cpp.html'">
+            <div class="card-icon"><i class="fas fa-code-branch" style="color:#004482;"></i></div>
             <h3>C++</h3>
-            <p>Performance & OOP <span class="new-badge">#CppPower</span></p>
+            <p>Object-oriented programming with performance.</p>
+            <span class="new-badge">#CppPower</span>
+            <i class="fas fa-arrow-right card-arrow"></i>
         </div>
-        
-        <!-- Java Card -->
-        <div class="lang-card" onclick="location.href='java.html'">
+
+        <div class="lang-card" style="--card-color:#007396" onclick="location.href='java.html'">
             <div class="card-icon"><i class="fab fa-java" style="color:#007396;"></i></div>
             <h3>Java</h3>
-            <p>Write once, run anywhere <span class="new-badge">#CodeInJava</span></p>
+            <p>Write once, run anywhere — build robust apps.</p>
+            <span class="new-badge">#CodeInJava</span>
+            <i class="fas fa-arrow-right card-arrow"></i>
         </div>
-        
-        <!-- SQL Card -->
-        <div class="lang-card" onclick="location.href='sql.html'">
-            <div class="card-icon"><i class="fas fa-database" style="color:#4479A1;"></i></div>
+
+        <div class="lang-card" style="--card-color:#336791" onclick="location.href='sql.html'">
+            <div class="card-icon"><i class="fas fa-database" style="color:#336791;"></i></div>
             <h3>SQL</h3>
-            <p>Master Databases <span class="new-badge">#QueryCraft</span></p>
+            <p>Query, manage and analyze relational data.</p>
+            <span class="new-badge">#QueryCraft</span>
+            <i class="fas fa-arrow-right card-arrow"></i>
+        </div>
+
+    </div>
+</section>
+
+<section class="features-section">
+    <h2 class="section-title">Why RT_SYNTAXTLAB?</h2>
+    <p class="section-sub">Built for focused, no-nonsense learning.</p>
+    <div class="features-grid">
+        <div class="feature-card">
+            <i class="fas fa-bolt"></i>
+            <h4>Bite-sized Topics</h4>
+            <p>Every language is broken into short, focused topics you can finish in minutes.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-code"></i>
+            <h4>Real Code Examples</h4>
+            <p>Every topic ships with a runnable, copy-ready code snippet and sample output.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-chart-line"></i>
+            <h4>Live Progress Tracking</h4>
+            <p>Your progress is saved per-language right in your browser — pick up where you left off.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-external-link-alt"></i>
+            <h4>Deeper References</h4>
+            <p>Each page links out to a full GeeksforGeeks tutorial for extra depth and practice.</p>
         </div>
     </div>
 </section>
 
-<footer class="footer">
-    <p>&copy; 2025 SyntaxLab | Empowering developers worldwide. Made with <i class="fas fa-heart" style="color:#ec4899;"></i> for learning.</p>
+<footer class="footer-main">
+    <div class="footer-grid">
+        <div class="footer-col">
+            <div class="footer-brand">
+                <div class="logo-icon"><img src="logo.svg" alt="logo"></div>
+                <span class="logo-text">RT_SYNTAXTLAB</span>
+            </div>
+            <p>A clean, light-themed hub for learning programming languages with clear examples — inspired by the best learning platforms on the web.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Languages</h4>
+            <ul>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="sql.html">SQL</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>More Languages</h4>
+            <ul>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="c.html">C</a></li>
+                <li><a href="cpp.html">C++</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener">GeeksforGeeks</a></li>
+                <li><a href="#subjects">All Languages</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>&copy; 2026 RT_SYNTAXTLAB | Empowering developers worldwide.</span>
+        <span>Made with <i class="fas fa-heart" style="color:#ec4899;"></i> for learning.</span>
+    </div>
 </footer>
 
 <script src="script.js"></script>

@@ -3,131 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyntaxLab | Learn HTML - Complete Tutorial with Details</title>
+    <title>RT_SYNTAXTLAB | Learn HTML</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Enhanced Learning Styles */
-        .info-box {
-            background: rgba(99, 102, 241, 0.08);
-            border-left: 4px solid #6366f1;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 12px;
-        }
-        .info-box i {
-            color: #6366f1;
-            margin-right: 10px;
-        }
-        .tip-box {
-            background: rgba(16, 185, 129, 0.08);
-            border-left: 4px solid #10b981;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 12px;
-        }
-        .warning-box {
-            background: rgba(245, 158, 11, 0.08);
-            border-left: 4px solid #f59e0b;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 12px;
-        }
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1rem 0;
-        }
-        .comparison-table th {
-            background: #6366f1;
-            color: white;
-            padding: 10px;
-        }
-        .comparison-table td {
-            border: 1px solid rgba(99,102,241,0.2);
-            padding: 10px;
-        }
-        .practice-card {
-            background: linear-gradient(135deg, rgba(99,102,241,0.05), rgba(236,72,153,0.05));
-            border-radius: 16px;
-            padding: 1.2rem;
-            margin: 1.2rem 0;
-            border: 1px solid rgba(99,102,241,0.2);
-        }
-        .practice-card h4 {
-            color: #6366f1;
-            margin-bottom: 0.5rem;
-        }
-        .code-inline {
-            background: #1e1e2e;
-            color: #e2e2e2;
-            padding: 0.2rem 0.4rem;
-            border-radius: 6px;
-            font-family: monospace;
-            font-size: 0.85rem;
-        }
-        .key-point {
-            display: inline-block;
-            background: #6366f1;
-            color: white;
-            font-size: 0.7rem;
-            padding: 2px 8px;
-            border-radius: 20px;
-            margin-right: 8px;
-            vertical-align: middle;
-        }
-        .section-badge {
-            display: inline-block;
-            background: #ec4899;
-            color: white;
-            font-size: 0.7rem;
-            padding: 2px 10px;
-            border-radius: 20px;
-            margin-left: 10px;
-        }
-        details {
-            margin: 1rem 0;
-            padding: 0.5rem;
-            border-radius: 12px;
-            background: rgba(0,0,0,0.02);
-        }
-        summary {
-            font-weight: 600;
-            cursor: pointer;
-            color: #6366f1;
-            padding: 0.5rem;
-        }
-        .grid-2col {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin: 1rem 0;
-        }
-        @media (max-width: 600px) {
-            .grid-2col {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 <body>
 
 <nav class="navbar">
     <div class="nav-container">
         <div class="logo-area" onclick="location.href='index.html'">
-            <div class="logo-icon"><i class="fab fa-html5"></i></div>
-            <span class="logo-text">SyntaxLab</span>
+            <div class="logo-icon"><img src="logo.svg" alt="RT_SYNTAXTLAB logo"></div>
+            <span class="logo-text">RT_<span>SYNTAXTLAB</span></span>
         </div>
         <div class="nav-links">
             <a href="index.html" class="nav-link">Home</a>
+            <a href="html.html" class="nav-link active">HTML</a>
+            <a href="css.html" class="nav-link">CSS</a>
+            <a href="javascript.html" class="nav-link">JavaScript</a>
+            <a href="python.html" class="nav-link">Python</a>
+            <a href="java.html" class="nav-link">Java</a>
+            <a href="php.html" class="nav-link">PHP</a>
+            <a href="c.html" class="nav-link">C</a>
+            <a href="cpp.html" class="nav-link">C++</a>
+            <a href="sql.html" class="nav-link">SQL</a>
         </div>
+        <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
 </nav>
 
 <div class="language-container">
     <div class="language-header">
-        <h1>Learn HTML <span class="badge">Complete Tutorial </span></h1>
-        <p class="intro">HTML is the standard markup language for creating Web pages. This comprehensive tutorial includes detailed explanations, practical examples, and learning tips for every concept.</p>
+        <div class="breadcrumb"><a href="index.html">Home</a> / HTML</div>
+        <div class="language-header-inner">
+            <div>
+                <h1><i class="fab fa-html5"></i> Learn HTML <span class="badge">Complete Tutorial </span></h1>
+                <p class="intro">HTML is the standard markup language for creating Web pages. This comprehensive tutorial includes detailed explanations, practical examples, and learning tips for every concept.</p>
+            </div>
+            <a class="btn btn-outline gfg-source-btn" href="https://www.geeksforgeeks.org/html/html-tutorial/" target="_blank" rel="noopener">
+                <i class="fas fa-external-link-alt"></i> Full Tutorial on GeeksforGeeks
+            </a>
+        </div>
     </div>
 
     <div class="content-grid">
@@ -183,7 +99,7 @@
                     <i class="fas fa-lightbulb"></i> <strong>What makes HTML special?</strong> HTML is not a programming language—it's a markup language that tells browsers how to organize and display content. Every website you visit uses HTML!
                 </div>
 
-                <div class="code-block"><pre>&lt;!DOCTYPE html&gt;     ← Declares this is HTML5 document
+                <div class="code-block" data-lang="html"><pre>&lt;!DOCTYPE html&gt;     ← Declares this is HTML5 document
 &lt;html&gt;              ← Root element (everything inside)
   &lt;head&gt;            ← Contains meta information
     &lt;title&gt;My First Page&lt;/title&gt;  ← Shows in browser tab
@@ -231,7 +147,7 @@
                 </div>
 
                 <h3>HTML Document Structure Explained</h3>
-                <div class="code-block"><pre>&lt;!DOCTYPE html&gt;     ← Tells browser: "This is HTML5"
+                <div class="code-block" data-lang="html"><pre>&lt;!DOCTYPE html&gt;     ← Tells browser: "This is HTML5"
 &lt;html&gt;              ← Everything goes inside this
   &lt;head&gt;            ← "Behind the scenes" info
     &lt;!-- Meta tags, title, CSS links go here --&gt;
@@ -259,7 +175,7 @@
                 <h2>🔰 3. HTML Basic Examples <span class="section-badge">First Code</span></h2>
                 
                 <h3>Your First HTML Page</h3>
-                <div class="code-block"><pre>&lt;!DOCTYPE html&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
 
@@ -305,7 +221,7 @@
                     <tr><td>Empty/Void</td><td>&lt;br&gt;, &lt;img&gt;, &lt;hr&gt;</td><td>No content, no end tag needed</td></tr>
                 </table>
 
-                <div class="code-block"><pre>&lt;!-- Block-level example --&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;!-- Block-level example --&gt;
 &lt;div&gt;This takes the whole line&lt;/div&gt;
 &lt;p&gt;Another block element&lt;/p&gt;
 
@@ -319,7 +235,7 @@ Line 2&lt;hr&gt;        ← Horizontal rule (separator)</pre></div>
                 <details>
                     <summary><i class="fas fa-code-branch"></i> Nested Elements (Elements inside elements)</summary>
                     <p>HTML elements can be nested inside each other:</p>
-                    <div class="code-block"><pre>&lt;div&gt;
+                    <div class="code-block" data-lang="html"><pre>&lt;div&gt;
   &lt;h2&gt;Outer Title&lt;/h2&gt;
   &lt;p&gt;This paragraph is inside the div&lt;/p&gt;
   &lt;ul&gt;
@@ -347,7 +263,7 @@ Line 2&lt;hr&gt;        ← Horizontal rule (separator)</pre></div>
                     <tr><td>style</td><td>All elements</td><td>Inline CSS styling</td><td>&lt;p style="color:red"&gt;</td></tr>
                 </table>
 
-                <div class="code-block"><pre>&lt;!-- Multiple attributes in one tag --&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;!-- Multiple attributes in one tag --&gt;
 &lt;a href="https://example.com" target="_blank" title="Click to visit"&gt;
   Visit Example
 &lt;/a&gt;
@@ -366,7 +282,7 @@ Line 2&lt;hr&gt;        ← Horizontal rule (separator)</pre></div>
                 <p><strong>Headings define the hierarchy of your content</strong> - like chapter titles in a book!</p>
 
                 <div class="grid-2col">
-                    <div class="code-block"><pre>&lt;h1&gt;Main Title (Most Important)&lt;/h1&gt;
+                    <div class="code-block" data-lang="html"><pre>&lt;h1&gt;Main Title (Most Important)&lt;/h1&gt;
 &lt;h2&gt;Section Title&lt;/h2&gt;
 &lt;h3&gt;Subsection&lt;/h3&gt;
 &lt;h4&gt;Sub-subsection&lt;/h4&gt;
@@ -398,7 +314,7 @@ Line 2&lt;hr&gt;        ← Horizontal rule (separator)</pre></div>
                 
                 <p>The <code class="code-inline">&lt;p&gt;</code> tag defines a paragraph - browsers automatically add margin space before and after.</p>
 
-                <div class="code-block"><pre>&lt;p&gt;This is a paragraph. It has some text and browsers will add space automatically between paragraphs.&lt;/p&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;p&gt;This is a paragraph. It has some text and browsers will add space automatically between paragraphs.&lt;/p&gt;
 
 &lt;p&gt;This is another paragraph. Notice the gap? That's CSS margin in action!&lt;/p&gt;
 
@@ -433,7 +349,7 @@ Line 2&lt;hr&gt;        ← Horizontal rule (separator)</pre></div>
                 
                 <p>The <code class="code-inline">style</code> attribute lets you add CSS directly to any element.</p>
 
-                <div class="code-block"><pre>&lt;!-- Text styles --&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;!-- Text styles --&gt;
 &lt;p style="color: blue;"&gt;Blue text&lt;/p&gt;
 &lt;p style="font-size: 20px;"&gt;Larger text&lt;/p&gt;
 &lt;p style="font-family: Arial, sans-serif;"&gt;Different font&lt;/p&gt;
@@ -471,7 +387,7 @@ Line 2&lt;hr&gt;        ← Horizontal rule (separator)</pre></div>
                 <h2>✍️ 9. HTML Text Formatting <span class="section-badge">Emphasis & Style</span></h2>
                 
                 <div class="grid-2col">
-                    <div class="code-block"><pre>&lt;b&gt;Bold text&lt;/b&gt; (visual only)
+                    <div class="code-block" data-lang="html"><pre>&lt;b&gt;Bold text&lt;/b&gt; (visual only)
 &lt;strong&gt;Important!&lt;/strong&gt; (semantic + bold)
 
 &lt;i&gt;Italic text&lt;/i&gt; (visual)
@@ -508,7 +424,7 @@ E=mc&lt;sup&gt;2&lt;/sup&gt; (superscript)</pre></div>
                 
                 <p class="info-box"><i class="fas fa-info-circle"></i> Comments are ignored by browsers - they help you document your code and temporarily disable sections.</p>
 
-                <div class="code-block"><pre>&lt;!-- This is an HTML comment. It won't show on the webpage! --&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;!-- This is an HTML comment. It won't show on the webpage! --&gt;
 
 &lt;!-- 
   Multi-line comments
@@ -566,7 +482,7 @@ E=mc&lt;sup&gt;2&lt;/sup&gt; (superscript)</pre></div>
                     </div>
                 </div>
 
-                <div class="code-block"><pre>&lt;style&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;style&gt;
   .color-example {
     /* All these produce the same TOMATO color */
     color: tomato;
@@ -591,7 +507,7 @@ E=mc&lt;sup&gt;2&lt;/sup&gt; (superscript)</pre></div>
                 
                 <p>The <code class="code-inline">&lt;a&gt;</code> (anchor) tag creates hyperlinks - the web's navigation system!</p>
 
-                <div class="code-block"><pre>&lt;!-- Basic link --&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;!-- Basic link --&gt;
 &lt;a href="https://www.google.com"&gt;Visit Google&lt;/a&gt;
 
 &lt;!-- Open in new tab (use target="_blank") --&gt;
@@ -636,7 +552,7 @@ E=mc&lt;sup&gt;2&lt;/sup&gt; (superscript)</pre></div>
                 
                 <p>The <code class="code-inline">&lt;img&gt;</code> tag embeds images. It's an empty tag (no closing tag).</p>
 
-                <div class="code-block"><pre>&lt;!-- Basic image with required attributes --&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;!-- Basic image with required attributes --&gt;
 &lt;img src="photo.jpg" alt="Description of image"&gt;
 
 &lt;!-- With dimensions (better performance) --&gt;
@@ -675,7 +591,7 @@ E=mc&lt;sup&gt;2&lt;/sup&gt; (superscript)</pre></div>
                 
                 <p>The <code class="code-inline">&lt;title&gt;</code> element in the <code class="code-inline">&lt;head&gt;</code> sets what appears in browser tabs, bookmarks, and search results.</p>
 
-                <div class="code-block"><pre>&lt;head&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;head&gt;
   &lt;title&gt;My Amazing Website - Learn HTML with SyntaxLab&lt;/title&gt;
 &lt;/head&gt;</pre></div>
 
@@ -707,7 +623,7 @@ E=mc&lt;sup&gt;2&lt;/sup&gt; (superscript)</pre></div>
                 
                 <p>Tables display data in rows and columns - perfect for spreadsheets, schedules, and comparisons!</p>
 
-                <div class="code-block"><pre>&lt;table&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;table&gt;
   &lt;!-- Table header (bold, centered automatically) --&gt;
   &lt;tr&gt;
     &lt;th&gt;Name&lt;/th&gt;
@@ -756,7 +672,7 @@ E=mc&lt;sup&gt;2&lt;/sup&gt; (superscript)</pre></div>
                 <h2>📋 16. HTML Lists <span class="section-badge">Item Collections</span></h2>
                 
                 <div class="grid-2col">
-                    <div class="code-block"><pre>&lt;!-- Unordered list (bullets) --&gt;
+                    <div class="code-block" data-lang="html"><pre>&lt;!-- Unordered list (bullets) --&gt;
 &lt;ul&gt;
   &lt;li&gt;Coffee&lt;/li&gt;
   &lt;li&gt;Tea&lt;/li&gt;
@@ -793,7 +709,7 @@ E=mc&lt;sup&gt;2&lt;/sup&gt; (superscript)</pre></div>
                             <li><code>type="I"</code> - Roman numerals</li>
                         </ul>
                         <strong>Description List:</strong>
-                        <div class="code-block"><pre>&lt;dl&gt;
+                        <div class="code-block" data-lang="html"><pre>&lt;dl&gt;
   &lt;dt&gt;HTML&lt;/dt&gt;
   &lt;dd&gt;Structure of web pages&lt;/dd&gt;
   &lt;dt&gt;CSS&lt;/dt&gt;
@@ -809,7 +725,7 @@ E=mc&lt;sup&gt;2&lt;/sup&gt; (superscript)</pre></div>
                 
                 <p>The <code class="code-inline">&lt;div&gt;</code> is a block-level container used to group HTML elements for styling and layout.</p>
 
-                <div class="code-block"><pre>&lt;!-- Basic div container --&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;!-- Basic div container --&gt;
 &lt;div style="background-color: #f0f0f0; padding: 20px;"&gt;
   &lt;h2&gt;Section Title&lt;/h2&gt;
   &lt;p&gt;This content is grouped together&lt;/p&gt;
@@ -839,7 +755,7 @@ E=mc&lt;sup&gt;2&lt;/sup&gt; (superscript)</pre></div>
                 
                 <p>The <code class="code-inline">class</code> attribute groups elements for CSS styling - multiple elements can share the same class!</p>
 
-                <div class="code-block"><pre>&lt;style&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;style&gt;
   .primary-button {
     background-color: #6366f1;
     color: white;
@@ -886,7 +802,7 @@ E=mc&lt;sup&gt;2&lt;/sup&gt; (superscript)</pre></div>
                 
                 <p>The <code class="code-inline">id</code> attribute provides a UNIQUE identifier for a single element (can't repeat on same page).</p>
 
-                <div class="code-block"><pre>&lt;style&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;style&gt;
   #main-header {
     background: linear-gradient(135deg, #6366f1, #ec4899);
     color: white;
@@ -975,7 +891,7 @@ E=mc&lt;sup&gt;2&lt;/sup&gt; (superscript)</pre></div>
             <div class="topic-section" id="section21">
                 <h2>🎬 21. HTML Audio/Video <span class="section-badge">Multimedia</span></h2>
                 
-                <div class="code-block"><pre>&lt;!-- Video with controls (play, pause, volume) --&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;!-- Video with controls (play, pause, volume) --&gt;
 &lt;video width="640" height="360" controls&gt;
   &lt;source src="movie.mp4" type="video/mp4"&gt;
   &lt;source src="movie.ogg" type="video/ogg"&gt;
@@ -1012,7 +928,7 @@ E=mc&lt;sup&gt;2&lt;/sup&gt; (superscript)</pre></div>
                 
                 <p><strong>UTF-8</strong> is the standard character set for HTML5 - it includes every character from all languages!</p>
 
-                <div class="code-block"><pre>&lt;!-- Always include this meta tag for proper encoding --&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;!-- Always include this meta tag for proper encoding --&gt;
 &lt;meta charset="UTF-8"&gt;
 
 &lt;!-- Common character entities (display special characters) --&gt;
@@ -1041,7 +957,7 @@ E=mc&lt;sup&gt;2&lt;/sup&gt; (superscript)</pre></div>
                 
                 <p>Use country codes with language codes in the <code>lang</code> attribute for proper localization.</p>
 
-                <div class="code-block"><pre>&lt;!-- English (US) --&gt;
+                <div class="code-block" data-lang="html"><pre>&lt;!-- English (US) --&gt;
 &lt;html lang="en-US"&gt;
 
 &lt;!-- English (UK) --&gt;
@@ -1143,51 +1059,8 @@ E=mc&lt;sup&gt;2&lt;/sup&gt; (superscript)</pre></div>
     </div>
 </div>
 
-<footer class="footer">
-    <p>© 2025 SyntaxLab | Complete HTML Tutorial with Detailed Explanations - Based on W3Schools Content</p>
-</footer>
+<footer class="footer"><p>© 2026 RT_SYNTAXTLAB | Complete HTML Tutorial with detailed explanations and examples.</p></footer>
 
 <script src="script.js"></script>
-<script>
-    // AUTO-RESET PROGRESS FUNCTION
-    (function() {
-        const pageKey = 'html.html';
-        const storageKey = `syntaxlab_viewed_${pageKey}`;
-        const sessionFlag = sessionStorage.getItem(`syntaxlab_session_${pageKey}`);
-        
-        if (!sessionFlag) {
-            localStorage.removeItem(storageKey);
-            const topics = document.querySelectorAll('.topic-section');
-            topics.forEach(topic => topic.classList.remove('viewed'));
-            const progressFill = document.querySelector('.progress-fill');
-            const percentSpan = document.querySelector('.progress-percent');
-            if (progressFill) {
-                progressFill.style.width = '0%';
-                if (percentSpan) percentSpan.innerText = '0%';
-            }
-            sessionStorage.setItem(`syntaxlab_session_${pageKey}`, 'visited');
-        }
-        
-        const resetBtn = document.getElementById('hardResetBtn');
-        if (resetBtn) {
-            resetBtn.addEventListener('click', function() {
-                localStorage.removeItem(storageKey);
-                sessionStorage.removeItem(`syntaxlab_session_${pageKey}`);
-                const topics = document.querySelectorAll('.topic-section');
-                topics.forEach(topic => topic.classList.remove('viewed'));
-                const progressFill = document.querySelector('.progress-fill');
-                const percentSpan = document.querySelector('.progress-percent');
-                if (progressFill) {
-                    progressFill.style.width = '0%';
-                    if (percentSpan) percentSpan.innerText = '0%';
-                }
-                const toast = document.createElement('div');
-                toast.innerHTML = `<div style="position:fixed;bottom:20px;right:20px;background:#1e1e2e;color:white;padding:12px 20px;border-radius:12px;z-index:9999;">🔄 All progress reset to 0%! Start fresh.</div>`;
-                document.body.appendChild(toast);
-                setTimeout(() => toast.remove(), 2000);
-            });
-        }
-    })();
-</script>
 </body>
 </html>
