@@ -3,49 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyntaxLab | Learn SQL</title>
+    <title>RT_SYNTAXTLAB | Learn SQL</title>
+    <meta name="description" content="Learn SQL with clear explanations, topic-by-topic lessons and runnable code examples on RT_SYNTAXTLAB.">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
 <nav class="navbar">
     <div class="nav-container">
-        <div class="logo-area"><div class="logo-icon"><i class="fas fa-database"></i></div><span class="logo-text">SyntaxLab</span></div>
-        <div class="nav-links"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="logo-area" onclick="location.href='index.html'">
+            <div class="logo-icon"><img src="logo.svg" alt="RT_SYNTAXTLAB logo"></div>
+            <span class="logo-text">RT_<span>SYNTAXTLAB</span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="html.html" class="nav-link">HTML</a>
+            <a href="css.html" class="nav-link">CSS</a>
+            <a href="javascript.html" class="nav-link">JavaScript</a>
+            <a href="python.html" class="nav-link">Python</a>
+            <a href="java.html" class="nav-link">Java</a>
+            <a href="php.html" class="nav-link">PHP</a>
+            <a href="c.html" class="nav-link">C</a>
+            <a href="cpp.html" class="nav-link">C++</a>
+            <a href="sql.html" class="nav-link active">SQL</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
 </nav>
-
 <div class="language-container">
     <div class="language-header">
-        <h1>Learn SQL</h1>
-        <p class="intro">SQL (Structured Query Language) is used to communicate with databases. It's essential for data management and analysis.</p>
+        <div class="breadcrumb"><a href="index.html">Home</a> / SQL</div>
+        <div class="language-header-inner">
+            <div>
+                <h1><i class="fas fa-database"></i> Learn SQL <span class="badge">Complete Tutorial</span></h1>
+                <p class="intro">SQL (Structured Query Language) is used to communicate with databases. It's essential for data management and analysis.</p>
+            </div>
+            <a class="btn btn-outline gfg-source-btn" href="https://www.geeksforgeeks.org/sql/sql-tutorial/" target="_blank" rel="noopener">
+                <i class="fas fa-external-link-alt"></i> Full Tutorial on GeeksforGeeks
+            </a>
+        </div>
     </div>
 
     <div class="content-grid">
         <aside class="topics-sidebar">
             <h3><i class="fas fa-list-ul"></i> Topics</h3>
             <ul class="topic-list">
-                <li><i class="fas fa-database"></i> Database Basics</li>
-                <li><i class="fas fa-table"></i> CREATE & INSERT</li>
-                <li><i class="fas fa-search"></i> SELECT Statement</li>
-                <li><i class="fas fa-filter"></i> WHERE Clause</li>
-                <li><i class="fas fa-sort"></i> ORDER BY & GROUP BY</li>
-                <li><i class="fas fa-link"></i> JOIN Operations</li>
-                <li><i class="fas fa-edit"></i> UPDATE & DELETE</li>
-                <li><i class="fas fa-chart-line"></i> Advanced Queries</li>
+                <li><i class="fas fa-flag"></i> 1. Database Basics</li>
+                <li><i class="fas fa-plus"></i> 2. CREATE & INSERT</li>
+                <li><i class="fas fa-search"></i> 3. SELECT Statement</li>
+                <li><i class="fas fa-filter"></i> 4. WHERE Clause</li>
+                <li><i class="fas fa-sort"></i> 5. ORDER BY & GROUP BY</li>
+                <li><i class="fas fa-link"></i> 6. JOIN Operations</li>
+                <li><i class="fas fa-edit"></i> 7. UPDATE & DELETE</li>
+                <li><i class="fas fa-chart-line"></i> 8. Subqueries & Views</li>
+                <li><i class="fas fa-key"></i> 9. Constraints & Keys</li>
+                <li><i class="fas fa-calculator"></i> 10. Aggregate Functions</li>
+                <li><i class="fas fa-hammer"></i> 11. ALTER & DROP</li>
+                <li><i class="fas fa-tachometer-alt"></i> 12. Indexes</li>
+                <li><i class="fas fa-object-group"></i> 13. UNION & Set Operations</li>
+                <li><i class="fas fa-shield-alt"></i> 14. Transactions</li>
             </ul>
             <div class="progress-wrapper">
-                <div class="progress-label"><span>Progress</span><span class="progress-percent">0%</span></div>
+                <div class="progress-label"><span><i class="fas fa-chart-line"></i> Progress</span><span class="progress-percent">0%</span></div>
                 <div class="progress-bar"><div class="progress-fill"></div></div>
+                <div class="reset-progress">
+                    <button class="reset-btn"><i class="fas fa-sync-alt"></i> Reset Progress</button>
+                </div>
             </div>
         </aside>
 
         <main class="main-content">
-            <div class="topic-section">
-                <h2>🗄️ Database Basics</h2>
-                <p>Databases store organized data. Tables contain rows and columns.</p>
-                <div class="code-block"><pre>-- Create a database
+            <div class="topic-section" id="section1">
+                <h2>🗄️ 1. Database Basics <span class="section-badge">Getting Started</span></h2>
+                <p>SQL (Structured Query Language) is used to communicate with relational databases. Databases store organized data in tables of rows and columns.</p>
+                <div class="code-block" data-lang="sql"><pre>-- Create a database
 CREATE DATABASE company;
 
 -- Use the database
@@ -57,12 +89,14 @@ CREATE TABLE employees (
     name VARCHAR(100),
     salary DECIMAL(10,2)
 );</pre></div>
+                
+                
             </div>
 
-            <div class="topic-section">
-                <h2>📝 CREATE & INSERT</h2>
-                <p>Create tables and add data using INSERT statement.</p>
-                <div class="code-block"><pre>CREATE TABLE products (
+            <div class="topic-section" id="section2">
+                <h2>📝 2. CREATE & INSERT <span class="section-badge">Adding Data</span></h2>
+                <p>Create tables with <code class='code-inline'>CREATE TABLE</code> and add rows with <code class='code-inline'>INSERT INTO</code>.</p>
+                <div class="code-block" data-lang="sql"><pre>CREATE TABLE products (
     product_id INT PRIMARY KEY,
     product_name VARCHAR(255),
     price DECIMAL(10,2)
@@ -70,14 +104,15 @@ CREATE TABLE employees (
 
 INSERT INTO products (product_id, product_name, price)
 VALUES (1, 'Laptop', 999.99),
-       (2, 'Mouse', 29.99),
-       (3, 'Keyboard', 79.99);</pre></div>
+       (2, 'Mouse', 29.99);</pre></div>
+                
+                
             </div>
 
-            <div class="topic-section">
-                <h2>🔍 SELECT Statement</h2>
-                <p>Retrieve data from database tables.</p>
-                <div class="code-block"><pre>-- Select all columns
+            <div class="topic-section" id="section3">
+                <h2>🔍 3. SELECT Statement <span class="section-badge">Reading Data</span></h2>
+                <p>Retrieve data from database tables with <code class='code-inline'>SELECT</code>.</p>
+                <div class="code-block" data-lang="sql"><pre>-- Select all columns
 SELECT * FROM employees;
 
 -- Select specific columns
@@ -85,109 +120,165 @@ SELECT name, salary FROM employees;
 
 -- Select with alias
 SELECT name AS employee_name, salary FROM employees;</pre></div>
+                
+                
             </div>
 
-            <div class="topic-section">
-                <h2>🎯 WHERE Clause</h2>
-                <p>Filter records based on conditions.</p>
-                <div class="code-block"><pre>-- Equal condition
-SELECT * FROM employees WHERE department = 'IT';
+            <div class="topic-section" id="section4">
+                <h2>🎯 4. WHERE Clause <span class="section-badge">Filtering Rows</span></h2>
+                <p>Filter records based on one or more conditions.</p>
+                <div class="code-block" data-lang="sql"><pre>SELECT * FROM employees WHERE department = 'IT';
 
--- Comparison operators
-SELECT * FROM products WHERE price > 50;
+SELECT * FROM products WHERE price &gt; 50;
 
--- Multiple conditions
-SELECT * FROM employees 
-WHERE age >= 25 AND salary > 50000;
+SELECT * FROM employees
+WHERE age &gt;= 25 AND salary &gt; 50000;
 
--- Pattern matching
 SELECT * FROM customers WHERE name LIKE 'J%';</pre></div>
+                
+                
             </div>
 
-            <div class="topic-section">
-                <h2>📊 ORDER BY & GROUP BY</h2>
-                <p>Sort results and group rows for aggregation.</p>
-                <div class="code-block"><pre>-- Sort results
-SELECT name, salary FROM employees
+            <div class="topic-section" id="section5">
+                <h2>📊 5. ORDER BY & GROUP BY <span class="section-badge">Sorting & Aggregation</span></h2>
+                <p>Sort results with <code class='code-inline'>ORDER BY</code> and group rows for aggregation with <code class='code-inline'>GROUP BY</code>.</p>
+                <div class="code-block" data-lang="sql"><pre>SELECT name, salary FROM employees
 ORDER BY salary DESC;
 
--- Group by with aggregation
-SELECT department, COUNT(*) as emp_count, AVG(salary) as avg_salary
-FROM employees
-GROUP BY department;
-
--- Having clause (filter groups)
-SELECT department, AVG(salary) as avg_salary
+SELECT department, COUNT(*) AS emp_count, AVG(salary) AS avg_salary
 FROM employees
 GROUP BY department
-HAVING AVG(salary) > 60000;</pre></div>
+HAVING AVG(salary) &gt; 60000;</pre></div>
+                
+                
             </div>
 
-            <div class="topic-section">
-                <h2>🔗 JOIN Operations</h2>
-                <p>Combine data from multiple tables.</p>
-                <div class="code-block"><pre>-- INNER JOIN
-SELECT employees.name, departments.dept_name
+            <div class="topic-section" id="section6">
+                <h2>🔗 6. JOIN Operations <span class="section-badge">Combining Tables</span></h2>
+                <p>Combine data from multiple related tables using INNER, LEFT, RIGHT or FULL joins.</p>
+                <div class="code-block" data-lang="sql"><pre>SELECT employees.name, departments.dept_name
 FROM employees
 INNER JOIN departments ON employees.dept_id = departments.id;
 
--- LEFT JOIN
 SELECT customers.name, orders.order_date
 FROM customers
-LEFT JOIN orders ON customers.id = orders.customer_id;
-
--- Multiple joins
-SELECT e.name, d.dept_name, p.project_name
-FROM employees e
-JOIN departments d ON e.dept_id = d.id
-JOIN projects p ON e.id = p.emp_id;</pre></div>
+LEFT JOIN orders ON customers.id = orders.customer_id;</pre></div>
+                
+                
             </div>
 
-            <div class="topic-section">
-                <h2>✏️ UPDATE & DELETE</h2>
-                <p>Modify or remove existing data.</p>
-                <div class="code-block"><pre>-- Update records
-UPDATE employees
+            <div class="topic-section" id="section7">
+                <h2>✏️ 7. UPDATE & DELETE <span class="section-badge">Modifying Data</span></h2>
+                <p>Modify existing rows with <code class='code-inline'>UPDATE</code>, or remove them with <code class='code-inline'>DELETE</code>.</p>
+                <div class="code-block" data-lang="sql"><pre>UPDATE employees
 SET salary = salary * 1.10
 WHERE department = 'Sales';
 
--- Delete records
 DELETE FROM employees
 WHERE status = 'inactive';
-
--- Be careful with DELETE (use WHERE clause!)
--- DELETE FROM employees; -- Removes ALL rows!</pre></div>
+-- Always use WHERE with DELETE, or you'll remove every row!</pre></div>
+                
+                
             </div>
 
-            <div class="topic-section">
-                <h2>📈 Advanced Queries</h2>
-                <p>Subqueries, views, and indexes for optimization.</p>
-                <div class="code-block"><pre>-- Subquery
-SELECT name, salary
+            <div class="topic-section" id="section8">
+                <h2>📈 8. Subqueries & Views <span class="section-badge">Advanced Queries</span></h2>
+                <p>A subquery nests one query inside another; a view saves a query as a reusable virtual table.</p>
+                <div class="code-block" data-lang="sql"><pre>SELECT name, salary
 FROM employees
-WHERE salary > (SELECT AVG(salary) FROM employees);
+WHERE salary &gt; (SELECT AVG(salary) FROM employees);
 
--- Create view
 CREATE VIEW high_earners AS
 SELECT name, salary, department
 FROM employees
-WHERE salary > 75000;
-
--- Index for faster queries
-CREATE INDEX idx_lastname ON customers(last_name);
-
--- Union of results
-SELECT name FROM employees
-UNION
-SELECT name FROM contractors;</pre></div>
+WHERE salary &gt; 75000;</pre></div>
+                
+                
             </div>
+
+            <div class="topic-section" id="section9">
+                <h2>🔑 9. Constraints & Keys <span class="section-badge">Data Integrity</span></h2>
+                <p>Constraints enforce rules on data: <code class='code-inline'>PRIMARY KEY</code>, <code class='code-inline'>FOREIGN KEY</code>, <code class='code-inline'>UNIQUE</code>, <code class='code-inline'>NOT NULL</code>.</p>
+                <div class="code-block" data-lang="sql"><pre>CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT NOT NULL,
+    quantity INT CHECK (quantity &gt; 0),
+    FOREIGN KEY (customer_id) REFERENCES customers(id)
+);</pre></div>
+                
+                
+            </div>
+
+            <div class="topic-section" id="section10">
+                <h2>🧮 10. Aggregate Functions <span class="section-badge">COUNT, SUM, AVG</span></h2>
+                <p>Aggregate functions compute a single value from a set of rows.</p>
+                <div class="code-block" data-lang="sql"><pre>SELECT COUNT(*) AS total_employees,
+       SUM(salary) AS total_payroll,
+       MAX(salary) AS highest_salary,
+       MIN(salary) AS lowest_salary
+FROM employees;</pre></div>
+                
+                
+            </div>
+
+            <div class="topic-section" id="section11">
+                <h2>🏷️ 11. ALTER & DROP <span class="section-badge">Modifying Structure</span></h2>
+                <p>Change table structure with <code class='code-inline'>ALTER TABLE</code>, or remove tables entirely with <code class='code-inline'>DROP TABLE</code>.</p>
+                <div class="code-block" data-lang="sql"><pre>ALTER TABLE employees ADD COLUMN email VARCHAR(100);
+ALTER TABLE employees DROP COLUMN age;
+
+DROP TABLE IF EXISTS temp_table;</pre></div>
+                
+                
+            </div>
+
+            <div class="topic-section" id="section12">
+                <h2>🚀 12. Indexes <span class="section-badge">Query Optimization</span></h2>
+                <p>Indexes speed up data retrieval at the cost of extra storage and slower writes.</p>
+                <div class="code-block" data-lang="sql"><pre>CREATE INDEX idx_lastname ON customers(last_name);
+
+-- Composite index on two columns
+CREATE INDEX idx_dept_salary ON employees(department, salary);</pre></div>
+                
+                
+            </div>
+
+            <div class="topic-section" id="section13">
+                <h2>🔀 13. UNION & Set Operations <span class="section-badge">Combining Results</span></h2>
+                <p><code class='code-inline'>UNION</code> combines the results of two queries, removing duplicates by default.</p>
+                <div class="code-block" data-lang="sql"><pre>SELECT name FROM employees
+UNION
+SELECT name FROM contractors;
+
+-- UNION ALL keeps duplicates and is faster
+SELECT city FROM customers
+UNION ALL
+SELECT city FROM suppliers;</pre></div>
+                
+                
+            </div>
+
+            <div class="topic-section" id="section14">
+                <h2>🧩 14. Transactions <span class="section-badge">COMMIT & ROLLBACK</span></h2>
+                <p>Transactions group multiple statements so they all succeed together or none apply, keeping data consistent.</p>
+                <div class="code-block" data-lang="sql"><pre>BEGIN TRANSACTION;
+
+UPDATE accounts SET balance = balance - 500 WHERE id = 1;
+UPDATE accounts SET balance = balance + 500 WHERE id = 2;
+
+COMMIT;
+-- Use ROLLBACK; instead of COMMIT; to undo on error</pre></div>
+                
+                
+            </div>
+
 
             <a href="index.html" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
         </main>
     </div>
 </div>
 
-<footer class="footer"><p>© 2026 SyntaxLab | SQL - Master database queries.</p></footer>
+<footer class="footer"><p>© 2026 RT_SYNTAXTLAB | SQL - Master database queries.</p></footer>
 <script src="script.js"></script>
 </body>
 </html>

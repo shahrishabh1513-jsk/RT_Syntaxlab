@@ -3,77 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyntaxLab | Learn C++</title>
+    <title>RT_SYNTAXTLAB | Learn C++</title>
+    <meta name="description" content="Learn C++ with clear explanations, topic-by-topic lessons and runnable code examples on RT_SYNTAXTLAB.">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
 <nav class="navbar">
     <div class="nav-container">
-        <div class="logo-area"><div class="logo-icon"><i class="fas fa-code-branch"></i></div><span class="logo-text">SyntaxLab</span></div>
-        <div class="nav-links"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="logo-area" onclick="location.href='index.html'">
+            <div class="logo-icon"><img src="logo.svg" alt="RT_SYNTAXTLAB logo"></div>
+            <span class="logo-text">RT_<span>SYNTAXTLAB</span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="html.html" class="nav-link">HTML</a>
+            <a href="css.html" class="nav-link">CSS</a>
+            <a href="javascript.html" class="nav-link">JavaScript</a>
+            <a href="python.html" class="nav-link">Python</a>
+            <a href="java.html" class="nav-link">Java</a>
+            <a href="php.html" class="nav-link">PHP</a>
+            <a href="c.html" class="nav-link">C</a>
+            <a href="cpp.html" class="nav-link active">C++</a>
+            <a href="sql.html" class="nav-link">SQL</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
 </nav>
-
 <div class="language-container">
     <div class="language-header">
-        <h1>Learn C++</h1>
-        <p class="intro">C++ is a powerful object-oriented programming language used for system software, game development, and performance-critical applications.</p>
+        <div class="breadcrumb"><a href="index.html">Home</a> / C++</div>
+        <div class="language-header-inner">
+            <div>
+                <h1><i class="fas fa-code-branch"></i> Learn C++ <span class="badge">Complete Tutorial</span></h1>
+                <p class="intro">C++ is a powerful object-oriented programming language used for system software, game development, and performance-critical applications.</p>
+            </div>
+            <a class="btn btn-outline gfg-source-btn" href="https://www.geeksforgeeks.org/cpp/c-plus-plus/" target="_blank" rel="noopener">
+                <i class="fas fa-external-link-alt"></i> Full Tutorial on GeeksforGeeks
+            </a>
+        </div>
     </div>
 
     <div class="content-grid">
         <aside class="topics-sidebar">
             <h3><i class="fas fa-list-ul"></i> Topics</h3>
             <ul class="topic-list">
-                <li><i class="fas fa-code"></i> C++ Basics & Syntax</li>
-                <li><i class="fas fa-database"></i> Variables & Data Types</li>
-                <li><i class="fas fa-cube"></i> Classes & Objects (OOP)</li>
-                <li><i class="fas fa-random"></i> Inheritance</li>
-                <li><i class="fas fa-puzzle-piece"></i> Polymorphism</li>
-                <li><i class="fas fa-layer-group"></i> Vectors & STL</li>
-                <li><i class="fas fa-exclamation-triangle"></i> Exception Handling</li>
-                <li><i class="fas fa-file"></i> File I/O</li>
+                <li><i class="fas fa-flag"></i> 1. Introduction</li>
+                <li><i class="fas fa-box"></i> 2. Variables & Data Types</li>
+                <li><i class="fas fa-calculator"></i> 3. Operators</li>
+                <li><i class="fas fa-random"></i> 4. Control Flow</li>
+                <li><i class="fas fa-sync"></i> 5. Loops</li>
+                <li><i class="fas fa-cogs"></i> 6. Functions</li>
+                <li><i class="fas fa-cube"></i> 7. Classes & Objects</li>
+                <li><i class="fas fa-sitemap"></i> 8. Inheritance</li>
+                <li><i class="fas fa-theater-masks"></i> 9. Polymorphism</li>
+                <li><i class="fas fa-puzzle-piece"></i> 10. Abstract Classes</li>
+                <li><i class="fas fa-layer-group"></i> 11. Vectors & STL</li>
+                <li><i class="fas fa-memory"></i> 12. Pointers & References</li>
+                <li><i class="fas fa-exclamation-triangle"></i> 13. Exception Handling</li>
+                <li><i class="fas fa-file-alt"></i> 14. File I/O</li>
+                <li><i class="fas fa-shapes"></i> 15. Templates</li>
             </ul>
             <div class="progress-wrapper">
-                <div class="progress-label"><span>Progress</span><span class="progress-percent">0%</span></div>
+                <div class="progress-label"><span><i class="fas fa-chart-line"></i> Progress</span><span class="progress-percent">0%</span></div>
                 <div class="progress-bar"><div class="progress-fill"></div></div>
+                <div class="reset-progress">
+                    <button class="reset-btn"><i class="fas fa-sync-alt"></i> Reset Progress</button>
+                </div>
             </div>
         </aside>
 
         <main class="main-content">
-            <div class="topic-section">
-                <h2>🚀 C++ Basics & Syntax</h2>
-                <p>C++ extends C with object-oriented features. Use iostream for input/output.</p>
-                <div class="code-block"><pre>#include &lt;iostream&gt;
+            <div class="topic-section" id="section1">
+                <h2>🚀 1. Introduction to C++ <span class="section-badge">Getting Started</span></h2>
+                <p>C++ extends C with object-oriented features. It's used for system software, game engines, and performance-critical applications.</p>
+                <div class="code-block" data-lang="cpp"><pre>#include &lt;iostream&gt;
 using namespace std;
 
 int main() {
-    cout << "Hello, C++!" << endl;
+    cout &lt;&lt; "Hello, C++!" &lt;&lt; endl;
     return 0;
 }</pre></div>
+                <div class="output-block"><b>Output:</b><br>Hello, C++!</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>📦 Variables & Data Types</h2>
-                <p>C++ supports primitive, derived, and user-defined data types.</p>
-                <div class="code-block"><pre>int age = 25;
+            <div class="topic-section" id="section2">
+                <h2>📦 2. Variables & Data Types <span class="section-badge">Values & Types</span></h2>
+                <p>C++ supports primitive, derived and user-defined data types, plus the <code class='code-inline'>string</code> class.</p>
+                <div class="code-block" data-lang="cpp"><pre>int age = 25;
 double price = 99.99;
 char letter = 'A';
 bool isValid = true;
-string name = "SyntaxLab";</pre></div>
+string name = "SyntaxLab";
+
+cout &lt;&lt; name &lt;&lt; " is " &lt;&lt; age &lt;&lt; endl;</pre></div>
+                <div class="output-block"><b>Output:</b><br>SyntaxLab is 25</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>🏗️ Classes & Objects (OOP)</h2>
-                <p>Classes encapsulate data and functions. Objects are instances of classes.</p>
-                <div class="code-block"><pre>class Car {
+            <div class="topic-section" id="section3">
+                <h2>🧮 3. Operators <span class="section-badge">Expressions</span></h2>
+                <p>C++ supports the same operator families as C, plus operator overloading for custom types.</p>
+                <div class="code-block" data-lang="cpp"><pre>int a = 10, b = 3;
+cout &lt;&lt; a + b &lt;&lt; " " &lt;&lt; a % b &lt;&lt; " " &lt;&lt; (a &gt; b) &lt;&lt; endl;</pre></div>
+                
+                
+            </div>
+
+            <div class="topic-section" id="section4">
+                <h2>⚖️ 4. Control Flow <span class="section-badge">if / else / switch</span></h2>
+                <p>Conditional statements direct the flow of your program.</p>
+                <div class="code-block" data-lang="cpp"><pre>int score = 75;
+
+if (score &gt;= 90) cout &lt;&lt; "A";
+else if (score &gt;= 70) cout &lt;&lt; "B";
+else cout &lt;&lt; "C";</pre></div>
+                <div class="output-block"><b>Output:</b><br>B</div>
+                
+            </div>
+
+            <div class="topic-section" id="section5">
+                <h2>🔄 5. Loops <span class="section-badge">for / while / do-while</span></h2>
+                <p>Repeat code with for, while, do-while, and the range-based for loop.</p>
+                <div class="code-block" data-lang="cpp"><pre>for (int i = 0; i &lt; 3; i++) cout &lt;&lt; i &lt;&lt; " ";
+
+int arr[] = {1, 2, 3};
+for (int n : arr) cout &lt;&lt; n &lt;&lt; " ";</pre></div>
+                
+                
+            </div>
+
+            <div class="topic-section" id="section6">
+                <h2>⚙️ 6. Functions <span class="section-badge">Reusable Code</span></h2>
+                <p>Functions can be overloaded (same name, different parameter types) and support default arguments.</p>
+                <div class="code-block" data-lang="cpp"><pre>int add(int a, int b) { return a + b; }
+double add(double a, double b) { return a + b; }
+
+int main() {
+    cout &lt;&lt; add(2, 3) &lt;&lt; " " &lt;&lt; add(2.5, 1.5);
+    return 0;
+}</pre></div>
+                <div class="output-block"><b>Output:</b><br>5 4</div>
+                
+            </div>
+
+            <div class="topic-section" id="section7">
+                <h2>🏗️ 7. Classes & Objects (OOP) <span class="section-badge">Encapsulation</span></h2>
+                <p>Classes encapsulate data and functions together. Objects are instances of classes.</p>
+                <div class="code-block" data-lang="cpp"><pre>class Car {
 public:
     string brand;
-    int year;
-    
     void drive() {
-        cout << brand << " is driving" << endl;
+        cout &lt;&lt; brand &lt;&lt; " is driving" &lt;&lt; endl;
     }
 };
 
@@ -83,16 +166,16 @@ int main() {
     myCar.drive();
     return 0;
 }</pre></div>
+                <div class="output-block"><b>Output:</b><br>Tesla is driving</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>🌳 Inheritance</h2>
-                <p>Derived classes inherit properties and methods from base classes.</p>
-                <div class="code-block"><pre>class Vehicle {
+            <div class="topic-section" id="section8">
+                <h2>🌳 8. Inheritance <span class="section-badge">Extending Classes</span></h2>
+                <p>Derived classes inherit properties and methods from base classes using <code class='code-inline'>: public</code>.</p>
+                <div class="code-block" data-lang="cpp"><pre>class Vehicle {
 public:
-    void honk() {
-        cout << "Beep beep!" << endl;
-    }
+    void honk() { cout &lt;&lt; "Beep beep!" &lt;&lt; endl; }
 };
 
 class Car : public Vehicle {
@@ -100,85 +183,129 @@ public:
     string model;
 };
 
-int main() {
-    Car myCar;
-    myCar.honk();  // Inherited method
-    return 0;
-}</pre></div>
+Car myCar;
+myCar.honk();</pre></div>
+                <div class="output-block"><b>Output:</b><br>Beep beep!</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>🎨 Polymorphism</h2>
-                <p>Virtual functions allow derived classes to override base class methods.</p>
-                <div class="code-block"><pre>class Animal {
+            <div class="topic-section" id="section9">
+                <h2>🎨 9. Polymorphism <span class="section-badge">Virtual Functions</span></h2>
+                <p>Virtual functions let derived classes override base class behavior, resolved at runtime.</p>
+                <div class="code-block" data-lang="cpp"><pre>class Animal {
 public:
-    virtual void sound() {
-        cout << "Animal makes sound" << endl;
-    }
+    virtual void sound() { cout &lt;&lt; "Animal makes sound" &lt;&lt; endl; }
 };
 
 class Dog : public Animal {
 public:
-    void sound() override {
-        cout << "Dog barks" << endl;
-    }
-};</pre></div>
+    void sound() override { cout &lt;&lt; "Dog barks" &lt;&lt; endl; }
+};
+
+Animal* a = new Dog();
+a-&gt;sound();</pre></div>
+                <div class="output-block"><b>Output:</b><br>Dog barks</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>📊 Vectors & STL</h2>
-                <p>Standard Template Library provides dynamic arrays, algorithms, and containers.</p>
-                <div class="code-block"><pre>#include &lt;vector&gt;
+            <div class="topic-section" id="section10">
+                <h2>🧩 10. Abstract Classes <span class="section-badge">Pure Virtual Functions</span></h2>
+                <p>An abstract class has at least one pure virtual function (<code class='code-inline'>= 0</code>) and cannot be instantiated directly.</p>
+                <div class="code-block" data-lang="cpp"><pre>class Shape {
+public:
+    virtual double area() = 0;   // pure virtual
+};
+
+class Circle : public Shape {
+    double r;
+public:
+    Circle(double r) : r(r) {}
+    double area() override { return 3.14159 * r * r; }
+};</pre></div>
+                
+                
+            </div>
+
+            <div class="topic-section" id="section11">
+                <h2>📊 11. Vectors & STL <span class="section-badge">Standard Template Library</span></h2>
+                <p>The STL provides dynamic arrays, algorithms, and generic containers like <code class='code-inline'>vector</code>, <code class='code-inline'>map</code> and <code class='code-inline'>set</code>.</p>
+                <div class="code-block" data-lang="cpp"><pre>#include &lt;vector&gt;
 #include &lt;algorithm&gt;
 
 vector&lt;int&gt; numbers = {5, 2, 8, 1};
 sort(numbers.begin(), numbers.end());
 
-for(int num : numbers) {
-    cout << num << " ";
-}</pre></div>
+for (int num : numbers) cout &lt;&lt; num &lt;&lt; " ";</pre></div>
+                <div class="output-block"><b>Output:</b><br>1 2 5 8</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>⚠️ Exception Handling</h2>
-                <p>Handle runtime errors gracefully using try-catch blocks.</p>
-                <div class="code-block"><pre>try {
-    int age;
-    cout << "Enter age: ";
-    cin >> age;
-    
-    if(age < 0) {
-        throw invalid_argument("Age cannot be negative");
-    }
-} catch(const exception& e) {
-    cout << "Error: " << e.what() << endl;
-}</pre></div>
+            <div class="topic-section" id="section12">
+                <h2>🧠 12. Pointers & References <span class="section-badge">Memory Management</span></h2>
+                <p>Pointers store addresses; references are aliases for existing variables and cannot be null or reassigned.</p>
+                <div class="code-block" data-lang="cpp"><pre>int x = 10;
+int *ptr = &amp;x;
+int &amp;ref = x;
+
+*ptr = 20;
+ref = 30;
+cout &lt;&lt; x;</pre></div>
+                <div class="output-block"><b>Output:</b><br>30</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>📄 File I/O</h2>
-                <p>Read from and write to files using fstream library.</p>
-                <div class="code-block"><pre>#include &lt;fstream&gt;
+            <div class="topic-section" id="section13">
+                <h2>⚠️ 13. Exception Handling <span class="section-badge">try / catch</span></h2>
+                <p>Handle runtime errors gracefully using try-catch blocks and the <code class='code-inline'>exception</code> hierarchy.</p>
+                <div class="code-block" data-lang="cpp"><pre>try {
+    int age = -5;
+    if (age &lt; 0) throw invalid_argument("Age cannot be negative");
+} catch (const exception&amp; e) {
+    cout &lt;&lt; "Error: " &lt;&lt; e.what() &lt;&lt; endl;
+}</pre></div>
+                <div class="output-block"><b>Output:</b><br>Error: Age cannot be negative</div>
+                
+            </div>
 
-// Writing to file
+            <div class="topic-section" id="section14">
+                <h2>📄 14. File I/O <span class="section-badge">fstream</span></h2>
+                <p>Read from and write to files using the <code class='code-inline'>fstream</code> library.</p>
+                <div class="code-block" data-lang="cpp"><pre>#include &lt;fstream&gt;
+
 ofstream outFile("data.txt");
-outFile << "Hello, File!" << endl;
+outFile &lt;&lt; "Hello, File!" &lt;&lt; endl;
 outFile.close();
 
-// Reading from file
 ifstream inFile("data.txt");
 string line;
-while(getline(inFile, line)) {
-    cout << line << endl;
-}</pre></div>
+while (getline(inFile, line)) cout &lt;&lt; line &lt;&lt; endl;</pre></div>
+                
+                
             </div>
+
+            <div class="topic-section" id="section15">
+                <h2>🧬 15. Templates <span class="section-badge">Generic Programming</span></h2>
+                <p>Templates let you write functions and classes that work with any data type.</p>
+                <div class="code-block" data-lang="cpp"><pre>template &lt;typename T&gt;
+T maxVal(T a, T b) {
+    return (a &gt; b) ? a : b;
+}
+
+int main() {
+    cout &lt;&lt; maxVal(3, 7) &lt;&lt; " " &lt;&lt; maxVal(2.5, 1.2);
+    return 0;
+}</pre></div>
+                <div class="output-block"><b>Output:</b><br>7 2.5</div>
+                
+            </div>
+
 
             <a href="index.html" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
         </main>
     </div>
 </div>
 
-<footer class="footer"><p>© 2026 SyntaxLab | C++ - Object-oriented power.</p></footer>
+<footer class="footer"><p>© 2026 RT_SYNTAXTLAB | C++ - Object-oriented power.</p></footer>
 <script src="script.js"></script>
 </body>
 </html>
