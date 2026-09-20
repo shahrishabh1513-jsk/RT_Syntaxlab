@@ -3,109 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyntaxLab | Learn C Programming</title>
+    <title>RT_SYNTAXTLAB | Learn C</title>
+    <meta name="description" content="Learn C with clear explanations, topic-by-topic lessons and runnable code examples on RT_SYNTAXTLAB.">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
 <nav class="navbar">
     <div class="nav-container">
-        <div class="logo-area"><div class="logo-icon"><i class="fas fa-code"></i></div><span class="logo-text">SyntaxLab</span></div>
-        <div class="nav-links"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="logo-area" onclick="location.href='index.html'">
+            <div class="logo-icon"><img src="logo.svg" alt="RT_SYNTAXTLAB logo"></div>
+            <span class="logo-text">RT_<span>SYNTAXTLAB</span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="html.html" class="nav-link">HTML</a>
+            <a href="css.html" class="nav-link">CSS</a>
+            <a href="javascript.html" class="nav-link">JavaScript</a>
+            <a href="python.html" class="nav-link">Python</a>
+            <a href="java.html" class="nav-link">Java</a>
+            <a href="php.html" class="nav-link">PHP</a>
+            <a href="c.html" class="nav-link active">C</a>
+            <a href="cpp.html" class="nav-link">C++</a>
+            <a href="sql.html" class="nav-link">SQL</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
 </nav>
-
 <div class="language-container">
     <div class="language-header">
-        <h1>Learn C Programming</h1>
-        <p class="intro">C is a powerful general-purpose programming language. It's the foundation of many modern languages and operating systems.</p>
+        <div class="breadcrumb"><a href="index.html">Home</a> / C</div>
+        <div class="language-header-inner">
+            <div>
+                <h1><i class="fas fa-code"></i> Learn C <span class="badge">Complete Tutorial</span></h1>
+                <p class="intro">C is a powerful general-purpose programming language. It's the foundation of many modern languages and operating systems.</p>
+            </div>
+            <a class="btn btn-outline gfg-source-btn" href="https://www.geeksforgeeks.org/c/c-programming-language/" target="_blank" rel="noopener">
+                <i class="fas fa-external-link-alt"></i> Full Tutorial on GeeksforGeeks
+            </a>
+        </div>
     </div>
 
     <div class="content-grid">
         <aside class="topics-sidebar">
             <h3><i class="fas fa-list-ul"></i> Topics</h3>
             <ul class="topic-list">
-                <li><i class="fas fa-code"></i> C Syntax & Structure</li>
-                <li><i class="fas fa-database"></i> Variables & Data Types</li>
-                <li><i class="fas fa-calculator"></i> Operators</li>
-                <li><i class="fas fa-random"></i> Control Flow (if/else, switch)</li>
-                <li><i class="fas fa-repeat"></i> Loops (for, while, do-while)</li>
-                <li><i class="fas fa-cube"></i> Functions</li>
-                <li><i class="fas fa-layer-group"></i> Arrays & Strings</li>
-                <li><i class="fas fa-memory"></i> Pointers</li>
+                <li><i class="fas fa-flag"></i> 1. Introduction</li>
+                <li><i class="fas fa-box"></i> 2. Variables & Data Types</li>
+                <li><i class="fas fa-calculator"></i> 3. Operators</li>
+                <li><i class="fas fa-random"></i> 4. Control Flow</li>
+                <li><i class="fas fa-sync"></i> 5. Loops</li>
+                <li><i class="fas fa-cogs"></i> 6. Functions</li>
+                <li><i class="fas fa-th"></i> 7. Arrays & Strings</li>
+                <li><i class="fas fa-map-pin"></i> 8. Pointers</li>
+                <li><i class="fas fa-cube"></i> 9. Structures</li>
+                <li><i class="fas fa-memory"></i> 10. Dynamic Memory</li>
+                <li><i class="fas fa-file-alt"></i> 11. File Handling</li>
+                <li><i class="fas fa-hashtag"></i> 12. Preprocessor Directives</li>
+                <li><i class="fas fa-object-group"></i> 13. Unions & Enums</li>
             </ul>
             <div class="progress-wrapper">
-                <div class="progress-label"><span>Progress</span><span class="progress-percent">0%</span></div>
+                <div class="progress-label"><span><i class="fas fa-chart-line"></i> Progress</span><span class="progress-percent">0%</span></div>
                 <div class="progress-bar"><div class="progress-fill"></div></div>
+                <div class="reset-progress">
+                    <button class="reset-btn"><i class="fas fa-sync-alt"></i> Reset Progress</button>
+                </div>
             </div>
         </aside>
 
         <main class="main-content">
-            <div class="topic-section">
-                <h2>🔧 C Syntax & Structure</h2>
-                <p>C programs start with headers and a main() function. Every statement ends with a semicolon.</p>
-                <div class="code-block"><pre>#include &lt;stdio.h&gt;
+            <div class="topic-section" id="section1">
+                <h2>🔧 1. Introduction to C <span class="section-badge">Getting Started</span></h2>
+                <p>C is a powerful, general-purpose programming language created in 1972. It's the foundation of many modern languages and operating systems like Linux and Windows.</p>
+                <div class="code-block" data-lang="c"><pre>#include &lt;stdio.h&gt;
 
 int main() {
     printf("Hello, World!");
     return 0;
 }</pre></div>
+                <div class="output-block"><b>Output:</b><br>Hello, World!</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>📊 Variables & Data Types</h2>
-                <p>Common data types: int, float, double, char. Variables must be declared before use.</p>
-                <div class="code-block"><pre>int age = 25;
-float price = 19.99;
+            <div class="topic-section" id="section2">
+                <h2>📊 2. Variables & Data Types <span class="section-badge">Values & Types</span></h2>
+                <p>Common data types: <code class='code-inline'>int</code>, <code class='code-inline'>float</code>, <code class='code-inline'>double</code>, <code class='code-inline'>char</code>. Variables must be declared before use.</p>
+                <div class="code-block" data-lang="c"><pre>int age = 25;
+float price = 19.99f;
 char grade = 'A';
-double pi = 3.14159;</pre></div>
+double pi = 3.14159;
+
+printf("Age: %d, Grade: %c\n", age, grade);</pre></div>
+                <div class="output-block"><b>Output:</b><br>Age: 25, Grade: A</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>🧮 Operators</h2>
+            <div class="topic-section" id="section3">
+                <h2>🧮 3. Operators <span class="section-badge">Expressions</span></h2>
                 <p>Arithmetic, relational, logical, and bitwise operators perform operations on data.</p>
-                <div class="code-block"><pre>int sum = 10 + 5;
-int isEqual = (a == b);
-int result = (a > b) && (c < d);</pre></div>
+                <div class="code-block" data-lang="c"><pre>int a = 10, b = 3;
+printf("%d %d %d\n", a + b, a % b, a &gt; b);</pre></div>
+                
+                
             </div>
 
-            <div class="topic-section">
-                <h2>⚖️ Control Flow</h2>
+            <div class="topic-section" id="section4">
+                <h2>⚖️ 4. Control Flow <span class="section-badge">if / else / switch</span></h2>
                 <p>Use if-else and switch statements for conditional execution.</p>
-                <div class="code-block"><pre>if (score >= 60) {
+                <div class="code-block" data-lang="c"><pre>int score = 65;
+
+if (score &gt;= 60) {
     printf("Pass");
 } else {
     printf("Fail");
 }
 
-switch(day) {
-    case 1: printf("Monday"); break;
-    case 2: printf("Tuesday"); break;
-    default: printf("Other day");
+switch (3) {
+    case 1: printf("One"); break;
+    case 3: printf("Three"); break;
+    default: printf("Other");
 }</pre></div>
+                <div class="output-block"><b>Output:</b><br>PassThree</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>🔄 Loops</h2>
+            <div class="topic-section" id="section5">
+                <h2>🔄 5. Loops <span class="section-badge">for / while / do-while</span></h2>
                 <p>Repeat code blocks with for, while, and do-while loops.</p>
-                <div class="code-block"><pre>// for loop
-for(int i = 0; i < 5; i++) {
+                <div class="code-block" data-lang="c"><pre>for (int i = 0; i &lt; 5; i++) {
     printf("%d ", i);
 }
 
-// while loop
 int i = 0;
-while(i < 5) {
+while (i &lt; 3) {
     printf("%d ", i);
     i++;
 }</pre></div>
+                
+                
             </div>
 
-            <div class="topic-section">
-                <h2>⚙️ Functions</h2>
-                <p>Functions help organize code into reusable blocks. They can return values and take parameters.</p>
-                <div class="code-block"><pre>int add(int a, int b) {
+            <div class="topic-section" id="section6">
+                <h2>⚙️ 6. Functions <span class="section-badge">Reusable Code</span></h2>
+                <p>Functions organize code into reusable blocks that can return values and take parameters.</p>
+                <div class="code-block" data-lang="c"><pre>int add(int a, int b) {
     return a + b;
 }
 
@@ -114,39 +156,129 @@ int main() {
     printf("Sum: %d", result);
     return 0;
 }</pre></div>
+                <div class="output-block"><b>Output:</b><br>Sum: 30</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>📚 Arrays & Strings</h2>
-                <p>Arrays store multiple elements of same type. Strings are character arrays.</p>
-                <div class="code-block"><pre>int numbers[5] = {1, 2, 3, 4, 5};
+            <div class="topic-section" id="section7">
+                <h2>📚 7. Arrays & Strings <span class="section-badge">Fixed Collections</span></h2>
+                <p>Arrays store multiple elements of the same type. Strings in C are just character arrays.</p>
+                <div class="code-block" data-lang="c"><pre>int numbers[5] = {1, 2, 3, 4, 5};
 char name[] = "SyntaxLab";
 
-// Access array elements
-for(int i = 0; i < 5; i++) {
+for (int i = 0; i &lt; 5; i++) {
     printf("%d ", numbers[i]);
+}
+printf("\n%s", name);</pre></div>
+                
+                
+            </div>
+
+            <div class="topic-section" id="section8">
+                <h2>📍 8. Pointers <span class="section-badge">Memory Addresses</span></h2>
+                <p>Pointers store memory addresses and enable dynamic memory management.</p>
+                <div class="code-block" data-lang="c"><pre>int x = 10;
+int *ptr = &amp;x;
+
+printf("Value: %d\n", *ptr);   // Dereferencing
+printf("Address: %p\n", (void*)ptr);
+
+*ptr = 20;
+printf("New value: %d\n", x);</pre></div>
+                <div class="output-block"><b>Output:</b><br>Value: 10
+Address: 0x...
+New value: 20</div>
+                
+            </div>
+
+            <div class="topic-section" id="section9">
+                <h2>🏗️ 9. Structures <span class="section-badge">Custom Data Types</span></h2>
+                <p><code class='code-inline'>struct</code> groups related variables of different types under one name.</p>
+                <div class="code-block" data-lang="c"><pre>struct Student {
+    char name[50];
+    int age;
+};
+
+int main() {
+    struct Student s1 = {"John", 20};
+    printf("%s is %d\n", s1.name, s1.age);
+    return 0;
 }</pre></div>
+                <div class="output-block"><b>Output:</b><br>John is 20</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>📍 Pointers</h2>
-                <p>Pointers store memory addresses. They enable dynamic memory management.</p>
-                <div class="code-block"><pre>int x = 10;
-int *ptr = &x;
+            <div class="topic-section" id="section10">
+                <h2>🧠 10. Dynamic Memory Allocation <span class="section-badge">malloc / free</span></h2>
+                <p>Allocate memory at runtime with <code class='code-inline'>malloc()</code> and release it with <code class='code-inline'>free()</code> to avoid memory leaks.</p>
+                <div class="code-block" data-lang="c"><pre>#include &lt;stdlib.h&gt;
 
-printf("Value: %d\n", *ptr);  // Dereferencing
-printf("Address: %p\n", ptr);
-
-// Changing value through pointer
-*ptr = 20;</pre></div>
+int *arr = (int*) malloc(5 * sizeof(int));
+if (arr != NULL) {
+    for (int i = 0; i &lt; 5; i++) arr[i] = i * 2;
+    printf("%d", arr[2]);
+    free(arr);
+}</pre></div>
+                <div class="output-block"><b>Output:</b><br>4</div>
+                
             </div>
+
+            <div class="topic-section" id="section11">
+                <h2>📄 11. File Handling <span class="section-badge">Reading & Writing</span></h2>
+                <p>Use <code class='code-inline'>FILE*</code> pointers with <code class='code-inline'>fopen</code>, <code class='code-inline'>fprintf</code> and <code class='code-inline'>fscanf</code> to work with files.</p>
+                <div class="code-block" data-lang="c"><pre>FILE *fp = fopen("data.txt", "w");
+fprintf(fp, "Hello, C!");
+fclose(fp);
+
+char buffer[50];
+fp = fopen("data.txt", "r");
+fgets(buffer, 50, fp);
+printf("%s", buffer);
+fclose(fp);</pre></div>
+                
+                
+            </div>
+
+            <div class="topic-section" id="section12">
+                <h2>#️⃣ 12. Preprocessor Directives <span class="section-badge">#define / #include</span></h2>
+                <p>Directives like <code class='code-inline'>#define</code> and <code class='code-inline'>#include</code> are processed before compilation.</p>
+                <div class="code-block" data-lang="c"><pre>#define PI 3.14159
+#define SQUARE(x) ((x) * (x))
+
+int main() {
+    printf("%f\n", PI);
+    printf("%d\n", SQUARE(5));
+    return 0;
+}</pre></div>
+                <div class="output-block"><b>Output:</b><br>3.141590
+25</div>
+                
+            </div>
+
+            <div class="topic-section" id="section13">
+                <h2>🔗 13. Unions & Enums <span class="section-badge">Alternate Data Types</span></h2>
+                <p><code class='code-inline'>union</code> shares memory between members; <code class='code-inline'>enum</code> defines named integer constants.</p>
+                <div class="code-block" data-lang="c"><pre>enum Day { MON, TUE, WED };
+union Data { int i; float f; };
+
+int main() {
+    enum Day today = TUE;
+    union Data d;
+    d.i = 10;
+    printf("%d %d", today, d.i);
+    return 0;
+}</pre></div>
+                <div class="output-block"><b>Output:</b><br>1 10</div>
+                
+            </div>
+
 
             <a href="index.html" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
         </main>
     </div>
 </div>
 
-<footer class="footer"><p>© 2026 SyntaxLab | C Programming - Build from the ground up.</p></footer>
+<footer class="footer"><p>© 2026 RT_SYNTAXTLAB | C Programming - Build from the ground up.</p></footer>
 <script src="script.js"></script>
 </body>
 </html>

@@ -3,77 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyntaxLab | Learn Java</title>
+    <title>RT_SYNTAXTLAB | Learn Java</title>
+    <meta name="description" content="Learn Java with clear explanations, topic-by-topic lessons and runnable code examples on RT_SYNTAXTLAB.">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
 <nav class="navbar">
     <div class="nav-container">
-        <div class="logo-area"><div class="logo-icon"><i class="fab fa-java"></i></div><span class="logo-text">SyntaxLab</span></div>
-        <div class="nav-links"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="logo-area" onclick="location.href='index.html'">
+            <div class="logo-icon"><img src="logo.svg" alt="RT_SYNTAXTLAB logo"></div>
+            <span class="logo-text">RT_<span>SYNTAXTLAB</span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="html.html" class="nav-link">HTML</a>
+            <a href="css.html" class="nav-link">CSS</a>
+            <a href="javascript.html" class="nav-link">JavaScript</a>
+            <a href="python.html" class="nav-link">Python</a>
+            <a href="java.html" class="nav-link active">Java</a>
+            <a href="php.html" class="nav-link">PHP</a>
+            <a href="c.html" class="nav-link">C</a>
+            <a href="cpp.html" class="nav-link">C++</a>
+            <a href="sql.html" class="nav-link">SQL</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
 </nav>
-
 <div class="language-container">
     <div class="language-header">
-        <h1>Learn Java</h1>
-        <p class="intro">Java is a versatile, object-oriented programming language used for web, mobile (Android), and enterprise applications.</p>
+        <div class="breadcrumb"><a href="index.html">Home</a> / Java</div>
+        <div class="language-header-inner">
+            <div>
+                <h1><i class="fab fa-java"></i> Learn Java <span class="badge">Complete Tutorial</span></h1>
+                <p class="intro">Java is a versatile, object-oriented programming language used for web, mobile (Android), and enterprise applications.</p>
+            </div>
+            <a class="btn btn-outline gfg-source-btn" href="https://www.geeksforgeeks.org/java/java/" target="_blank" rel="noopener">
+                <i class="fas fa-external-link-alt"></i> Full Tutorial on GeeksforGeeks
+            </a>
+        </div>
     </div>
 
     <div class="content-grid">
         <aside class="topics-sidebar">
             <h3><i class="fas fa-list-ul"></i> Topics</h3>
             <ul class="topic-list">
-                <li><i class="fas fa-code"></i> Java Syntax & Setup</li>
-                <li><i class="fas fa-database"></i> Variables & Data Types</li>
-                <li><i class="fas fa-cube"></i> OOP Concepts (Classes)</li>
-                <li><i class="fas fa-children"></i> Inheritance & Interfaces</li>
-                <li><i class="fas fa-random"></i> Exception Handling</li>
-                <li><i class="fas fa-layer-group"></i> Collections Framework</li>
-                <li><i class="fas fa-thread"></i> Multithreading</li>
-                <li><i class="fas fa-file-alt"></i> File Handling</li>
+                <li><i class="fas fa-flag"></i> 1. Introduction</li>
+                <li><i class="fas fa-box"></i> 2. Variables & Data Types</li>
+                <li><i class="fas fa-calculator"></i> 3. Operators</li>
+                <li><i class="fas fa-random"></i> 4. Control Flow</li>
+                <li><i class="fas fa-sync"></i> 5. Loops</li>
+                <li><i class="fas fa-th"></i> 6. Arrays</li>
+                <li><i class="fas fa-quote-right"></i> 7. Strings</li>
+                <li><i class="fas fa-cogs"></i> 8. Methods</li>
+                <li><i class="fas fa-cube"></i> 9. Classes & Objects</li>
+                <li><i class="fas fa-sitemap"></i> 10. Inheritance</li>
+                <li><i class="fas fa-theater-masks"></i> 11. Polymorphism</li>
+                <li><i class="fas fa-puzzle-piece"></i> 12. Abstraction & Interfaces</li>
+                <li><i class="fas fa-exclamation-triangle"></i> 13. Exception Handling</li>
+                <li><i class="fas fa-layer-group"></i> 14. Collections Framework</li>
+                <li><i class="fas fa-code-branch"></i> 15. Multithreading</li>
+                <li><i class="fas fa-file-alt"></i> 16. File Handling</li>
+                <li><i class="fas fa-shapes"></i> 17. Generics</li>
+                <li><i class="fas fa-bolt"></i> 18. Lambdas & Streams</li>
             </ul>
             <div class="progress-wrapper">
-                <div class="progress-label"><span>Progress</span><span class="progress-percent">0%</span></div>
+                <div class="progress-label"><span><i class="fas fa-chart-line"></i> Progress</span><span class="progress-percent">0%</span></div>
                 <div class="progress-bar"><div class="progress-fill"></div></div>
+                <div class="reset-progress">
+                    <button class="reset-btn"><i class="fas fa-sync-alt"></i> Reset Progress</button>
+                </div>
             </div>
         </aside>
 
         <main class="main-content">
-            <div class="topic-section">
-                <h2>☕ Java Syntax & Setup</h2>
-                <p>Java programs run on JVM. Every application needs a main method.</p>
-                <div class="code-block"><pre>public class Main {
+            <div class="topic-section" id="section1">
+                <h2>☕ 1. Introduction to Java <span class="section-badge">Getting Started</span></h2>
+                <p>Java is a versatile, object-oriented programming language used for web, mobile (Android) and enterprise applications. Code compiles to bytecode and runs on the Java Virtual Machine (JVM).</p><div class="info-box"><i class="fas fa-lightbulb"></i> <strong>Why Java?</strong><ul style="margin-top:8px;"><li>Platform-independent: "write once, run anywhere"</li><li>Strongly typed and object-oriented</li><li>Huge ecosystem for enterprise & Android apps</li></ul></div>
+                <div class="code-block" data-lang="java"><pre>public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, Java!");
     }
 }</pre></div>
+                <div class="output-block"><b>Output:</b><br>Hello, Java!</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>📦 Variables & Data Types</h2>
-                <p>Java is strongly typed. Primitive and reference types.</p>
-                <div class="code-block"><pre>int age = 25;
+            <div class="topic-section" id="section2">
+                <h2>📦 2. Variables & Data Types <span class="section-badge">Values & Types</span></h2>
+                <p>Java is strongly typed. Every variable must be declared with a primitive or reference type.</p>
+                <div class="code-block" data-lang="java"><pre>int age = 25;
 double price = 19.99;
 char grade = 'A';
 boolean isActive = true;
-String name = "SyntaxLab";</pre></div>
+String name = "SyntaxLab";
+
+System.out.println(name + " - " + age);</pre></div>
+                <div class="output-block"><b>Output:</b><br>SyntaxLab - 25</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>🏗️ OOP Concepts (Classes)</h2>
-                <p>Classes blueprints for objects. Encapsulation with private fields and public methods.</p>
-                <div class="code-block"><pre>public class Student {
+            <div class="topic-section" id="section3">
+                <h2>🧮 3. Operators <span class="section-badge">Expressions</span></h2>
+                <p>Java supports arithmetic, relational, logical and assignment operators.</p>
+                <div class="code-block" data-lang="java"><pre>int a = 10, b = 3;
+System.out.println(a + b);
+System.out.println(a % b);
+System.out.println(a &gt; b &amp;&amp; b &gt; 0);</pre></div>
+                
+                
+            </div>
+
+            <div class="topic-section" id="section4">
+                <h2>⚖️ 4. Control Flow <span class="section-badge">if / else / switch</span></h2>
+                <p>Use conditionals to control which code executes.</p>
+                <div class="code-block" data-lang="java"><pre>int score = 82;
+
+if (score &gt;= 90) {
+    System.out.println("Grade A");
+} else if (score &gt;= 70) {
+    System.out.println("Grade B");
+} else {
+    System.out.println("Grade C");
+}</pre></div>
+                <div class="output-block"><b>Output:</b><br>Grade B</div>
+                
+            </div>
+
+            <div class="topic-section" id="section5">
+                <h2>🔁 5. Loops <span class="section-badge">for / while / do-while</span></h2>
+                <p>Java supports the classic loop constructs, plus the enhanced for-each loop.</p>
+                <div class="code-block" data-lang="java"><pre>for (int i = 0; i &lt; 3; i++) {
+    System.out.println("i = " + i);
+}
+
+int[] nums = {10, 20, 30};
+for (int n : nums) {
+    System.out.println(n);
+}</pre></div>
+                
+                
+            </div>
+
+            <div class="topic-section" id="section6">
+                <h2>🧱 6. Arrays <span class="section-badge">Fixed-size Collections</span></h2>
+                <p>Arrays store a fixed number of elements of the same type.</p>
+                <div class="code-block" data-lang="java"><pre>int[] numbers = {1, 2, 3, 4, 5};
+System.out.println(numbers.length);
+System.out.println(numbers[2]);
+
+int[][] grid = { {1, 2}, {3, 4} };
+System.out.println(grid[1][0]);</pre></div>
+                <div class="output-block"><b>Output:</b><br>5
+3
+3</div>
+                
+            </div>
+
+            <div class="topic-section" id="section7">
+                <h2>🔤 7. Strings <span class="section-badge">Text Handling</span></h2>
+                <p>The <code class='code-inline'>String</code> class provides many methods for text processing.</p>
+                <div class="code-block" data-lang="java"><pre>String s = "SyntaxLab";
+System.out.println(s.toUpperCase());
+System.out.println(s.length());
+System.out.println(s.substring(0, 6));</pre></div>
+                
+                
+            </div>
+
+            <div class="topic-section" id="section8">
+                <h2>⚙️ 8. Methods <span class="section-badge">Reusable Code Blocks</span></h2>
+                <p>Methods define reusable behavior and can be overloaded (same name, different parameters).</p>
+                <div class="code-block" data-lang="java"><pre>static int add(int a, int b) {
+    return a + b;
+}
+
+static double add(double a, double b) {
+    return a + b;
+}
+
+public static void main(String[] args) {
+    System.out.println(add(2, 3));
+    System.out.println(add(2.5, 3.5));
+}</pre></div>
+                <div class="output-block"><b>Output:</b><br>5
+6.0</div>
+                
+            </div>
+
+            <div class="topic-section" id="section9">
+                <h2>🏗️ 9. Classes & Objects <span class="section-badge">OOP Basics</span></h2>
+                <p>Classes are blueprints for objects. Encapsulation uses private fields with public getters/setters.</p>
+                <div class="code-block" data-lang="java"><pre>public class Student {
     private String name;
     private int age;
-    
+
     public Student(String name, int age) {
         this.name = name;
         this.age = age;
     }
-    
+
     public void display() {
         System.out.println(name + " is " + age);
     }
@@ -81,12 +211,55 @@ String name = "SyntaxLab";</pre></div>
 
 Student s1 = new Student("John", 20);
 s1.display();</pre></div>
+                <div class="output-block"><b>Output:</b><br>John is 20</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>🌳 Inheritance & Interfaces</h2>
-                <p>Extend classes with 'extends' and implement contracts with 'implements'.</p>
-                <div class="code-block"><pre>interface Drawable {
+            <div class="topic-section" id="section10">
+                <h2>🌳 10. Inheritance <span class="section-badge">extends</span></h2>
+                <p>A subclass inherits fields and methods from a parent class using <code class='code-inline'>extends</code>.</p>
+                <div class="code-block" data-lang="java"><pre>class Vehicle {
+    void start() {
+        System.out.println("Vehicle started");
+    }
+}
+
+class Car extends Vehicle {
+    void drive() {
+        System.out.println("Car is driving");
+    }
+}
+
+Car c = new Car();
+c.start();
+c.drive();</pre></div>
+                <div class="output-block"><b>Output:</b><br>Vehicle started
+Car is driving</div>
+                
+            </div>
+
+            <div class="topic-section" id="section11">
+                <h2>🎭 11. Polymorphism <span class="section-badge">Method Overriding</span></h2>
+                <p>Subclasses can override parent methods to provide their own implementation.</p>
+                <div class="code-block" data-lang="java"><pre>class Animal {
+    void sound() { System.out.println("Animal makes a sound"); }
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() { System.out.println("Dog barks"); }
+}
+
+Animal a = new Dog();
+a.sound();</pre></div>
+                <div class="output-block"><b>Output:</b><br>Dog barks</div>
+                
+            </div>
+
+            <div class="topic-section" id="section12">
+                <h2>🧩 12. Abstraction & Interfaces <span class="section-badge">Contracts</span></h2>
+                <p>Interfaces define a contract of methods that implementing classes must provide.</p>
+                <div class="code-block" data-lang="java"><pre>interface Drawable {
     void draw();
 }
 
@@ -96,81 +269,118 @@ class Circle implements Drawable {
     }
 }
 
-class Vehicle {
-    void start() {
-        System.out.println("Vehicle started");
-    }
-}</pre></div>
+new Circle().draw();</pre></div>
+                <div class="output-block"><b>Output:</b><br>Drawing circle</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>⚠️ Exception Handling</h2>
-                <p>Handle errors using try-catch-finally blocks.</p>
-                <div class="code-block"><pre>try {
+            <div class="topic-section" id="section13">
+                <h2>⚠️ 13. Exception Handling <span class="section-badge">try / catch / finally</span></h2>
+                <p>Handle runtime errors using try-catch-finally so the program doesn't crash unexpectedly.</p>
+                <div class="code-block" data-lang="java"><pre>try {
     int result = 10 / 0;
 } catch (ArithmeticException e) {
     System.out.println("Cannot divide by zero!");
 } finally {
     System.out.println("This always executes");
 }</pre></div>
+                <div class="output-block"><b>Output:</b><br>Cannot divide by zero!
+This always executes</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>📚 Collections Framework</h2>
-                <p>ArrayList, HashMap, and other data structures.</p>
-                <div class="code-block"><pre>import java.util.*;
+            <div class="topic-section" id="section14">
+                <h2>📚 14. Collections Framework <span class="section-badge">ArrayList & HashMap</span></h2>
+                <p>The Collections Framework provides ready-made dynamic data structures like <code class='code-inline'>ArrayList</code> and <code class='code-inline'>HashMap</code>.</p>
+                <div class="code-block" data-lang="java"><pre>import java.util.*;
 
 ArrayList&lt;String&gt; list = new ArrayList&lt;&gt;();
 list.add("Java");
 list.add("Python");
-list.add("C++");
 
 HashMap&lt;String, Integer&gt; map = new HashMap&lt;&gt;();
 map.put("One", 1);
-map.put("Two", 2);</pre></div>
+map.put("Two", 2);
+
+System.out.println(list);
+System.out.println(map.get("One"));</pre></div>
+                <div class="output-block"><b>Output:</b><br>[Java, Python]
+1</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>🧵 Multithreading</h2>
-                <p>Run multiple tasks concurrently using Thread class or Runnable interface.</p>
-                <div class="code-block"><pre>class MyThread extends Thread {
+            <div class="topic-section" id="section15">
+                <h2>🧵 15. Multithreading <span class="section-badge">Concurrent Execution</span></h2>
+                <p>Run multiple tasks concurrently using the <code class='code-inline'>Thread</code> class or <code class='code-inline'>Runnable</code> interface.</p>
+                <div class="code-block" data-lang="java"><pre>class MyThread extends Thread {
     public void run() {
         System.out.println("Thread running");
     }
 }
 
-MyThread t1 = new MyThread();
-t1.start();
+new MyThread().start();
 
-// Using Runnable
-Runnable task = () -> {
-    System.out.println("Runnable task");
-};
+Runnable task = () -&gt; System.out.println("Runnable task");
 new Thread(task).start();</pre></div>
+                
+                
             </div>
 
-            <div class="topic-section">
-                <h2>📄 File Handling</h2>
-                <p>Read and write files using FileReader, FileWriter, and Scanner.</p>
-                <div class="code-block"><pre>import java.io.*;
+            <div class="topic-section" id="section16">
+                <h2>📄 16. File Handling <span class="section-badge">Reading & Writing Files</span></h2>
+                <p>Read and write files using <code class='code-inline'>FileWriter</code>, <code class='code-inline'>FileReader</code> and <code class='code-inline'>BufferedReader</code>.</p>
+                <div class="code-block" data-lang="java"><pre>import java.io.*;
 
-// Writing to file
 FileWriter writer = new FileWriter("data.txt");
 writer.write("Hello Java!");
 writer.close();
 
-// Reading from file
 BufferedReader reader = new BufferedReader(new FileReader("data.txt"));
-String line = reader.readLine();
-System.out.println(line);</pre></div>
+System.out.println(reader.readLine());</pre></div>
+                
+                
             </div>
+
+            <div class="topic-section" id="section17">
+                <h2>🧬 17. Generics <span class="section-badge">Type-Safe Code</span></h2>
+                <p>Generics let classes and methods operate on typed parameters, catching type errors at compile time.</p>
+                <div class="code-block" data-lang="java"><pre>class Box&lt;T&gt; {
+    private T value;
+    public void set(T value) { this.value = value; }
+    public T get() { return value; }
+}
+
+Box&lt;Integer&gt; intBox = new Box&lt;&gt;();
+intBox.set(10);
+System.out.println(intBox.get());</pre></div>
+                <div class="output-block"><b>Output:</b><br>10</div>
+                
+            </div>
+
+            <div class="topic-section" id="section18">
+                <h2>🚀 18. Java 8+ Features: Lambdas & Streams <span class="section-badge">Modern Java</span></h2>
+                <p>Lambda expressions and the Stream API enable a concise, functional style of processing collections.</p>
+                <div class="code-block" data-lang="java"><pre>import java.util.*;
+import java.util.stream.*;
+
+List&lt;Integer&gt; nums = List.of(1, 2, 3, 4, 5);
+int sum = nums.stream()
+              .filter(n -&gt; n % 2 == 0)
+              .mapToInt(Integer::intValue)
+              .sum();
+
+System.out.println(sum);</pre></div>
+                <div class="output-block"><b>Output:</b><br>6</div>
+                
+            </div>
+
 
             <a href="index.html" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
         </main>
     </div>
 </div>
 
-<footer class="footer"><p>© 2026 SyntaxLab | Java - Write once, run anywhere.</p></footer>
+<footer class="footer"><p>© 2026 RT_SYNTAXTLAB | Java - Write once, run anywhere.</p></footer>
 <script src="script.js"></script>
 </body>
 </html>

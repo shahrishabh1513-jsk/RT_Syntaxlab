@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RT_SYNTAXTLAB | Learn Python</title>
-    <meta name="description" content="Learn Python with clear explanations, topic-by-topic lessons and runnable code examples on RT_SYNTAXTLAB.">
+    <title>RT_SYNTAXTLAB | Learn PHP</title>
+    <meta name="description" content="Learn PHP with clear explanations, topic-by-topic lessons and runnable code examples on RT_SYNTAXTLAB.">
     <link rel="icon" type="image/svg+xml" href="logo.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -21,9 +21,9 @@
             <a href="html.html" class="nav-link">HTML</a>
             <a href="css.html" class="nav-link">CSS</a>
             <a href="javascript.html" class="nav-link">JavaScript</a>
-            <a href="python.html" class="nav-link active">Python</a>
+            <a href="python.html" class="nav-link">Python</a>
             <a href="java.html" class="nav-link">Java</a>
-            <a href="php.html" class="nav-link">PHP</a>
+            <a href="php.html" class="nav-link active">PHP</a>
             <a href="c.html" class="nav-link">C</a>
             <a href="cpp.html" class="nav-link">C++</a>
             <a href="sql.html" class="nav-link">SQL</a>
@@ -33,13 +33,13 @@
 </nav>
 <div class="language-container">
     <div class="language-header">
-        <div class="breadcrumb"><a href="index.html">Home</a> / Python</div>
+        <div class="breadcrumb"><a href="index.html">Home</a> / PHP</div>
         <div class="language-header-inner">
             <div>
-                <h1><i class="fab fa-python"></i> Learn Python <span class="badge">Complete Tutorial</span></h1>
-                <p class="intro">Python is a high-level, interpreted programming language known for its simplicity and readability. Perfect for beginners and professionals alike.</p>
+                <h1><i class="fab fa-php"></i> Learn PHP <span class="badge">Complete Tutorial</span></h1>
+                <p class="intro">PHP is a server-side scripting language used to build dynamic websites and web applications.</p>
             </div>
-            <a class="btn btn-outline gfg-source-btn" href="https://www.geeksforgeeks.org/python/python-programming-language-tutorial/" target="_blank" rel="noopener">
+            <a class="btn btn-outline gfg-source-btn" href="https://www.geeksforgeeks.org/php/php-tutorial/" target="_blank" rel="noopener">
                 <i class="fas fa-external-link-alt"></i> Full Tutorial on GeeksforGeeks
             </a>
         </div>
@@ -52,21 +52,19 @@
                 <li><i class="fas fa-flag"></i> 1. Introduction</li>
                 <li><i class="fas fa-box"></i> 2. Variables & Data Types</li>
                 <li><i class="fas fa-calculator"></i> 3. Operators</li>
-                <li><i class="fas fa-random"></i> 4. Control Flow</li>
+                <li><i class="fas fa-random"></i> 4. Conditional Statements</li>
                 <li><i class="fas fa-sync"></i> 5. Loops</li>
-                <li><i class="fas fa-cogs"></i> 6. Functions</li>
-                <li><i class="fas fa-list-ol"></i> 7. Lists</li>
-                <li><i class="fas fa-key"></i> 8. Dictionaries</li>
-                <li><i class="fas fa-shapes"></i> 9. Tuples & Sets</li>
-                <li><i class="fas fa-quote-right"></i> 10. Strings</li>
-                <li><i class="fas fa-file-alt"></i> 11. File Handling</li>
-                <li><i class="fas fa-exclamation-triangle"></i> 12. Exception Handling</li>
-                <li><i class="fas fa-cube"></i> 13. OOP: Classes</li>
-                <li><i class="fas fa-sitemap"></i> 14. Inheritance</li>
-                <li><i class="fas fa-puzzle-piece"></i> 15. Modules & Packages</li>
-                <li><i class="fas fa-bolt"></i> 16. Lambda & Comprehensions</li>
-                <li><i class="fas fa-cubes"></i> 17. Virtual Environments & pip</li>
-                <li><i class="fas fa-cloud"></i> 18. Working with APIs</li>
+                <li><i class="fas fa-cogs"></i> 6. Functions & Arrays</li>
+                <li><i class="fas fa-quote-right"></i> 7. Strings</li>
+                <li><i class="fas fa-globe"></i> 8. Form Handling</li>
+                <li><i class="fas fa-server"></i> 9. Databases (PDO)</li>
+                <li><i class="fas fa-lock"></i> 10. Sessions & Cookies</li>
+                <li><i class="fas fa-cube"></i> 11. OOP: Classes</li>
+                <li><i class="fas fa-sitemap"></i> 12. Inheritance</li>
+                <li><i class="fas fa-exclamation-triangle"></i> 13. Exception Handling</li>
+                <li><i class="fas fa-file-alt"></i> 14. File Handling</li>
+                <li><i class="fas fa-globe-americas"></i> 15. Superglobals</li>
+                <li><i class="fas fa-cubes"></i> 16. Composer & Namespaces</li>
             </ul>
             <div class="progress-wrapper">
                 <div class="progress-label"><span><i class="fas fa-chart-line"></i> Progress</span><span class="progress-percent">0%</span></div>
@@ -79,264 +77,274 @@
 
         <main class="main-content">
             <div class="topic-section" id="section1">
-                <h2>🐍 1. Introduction to Python <span class="section-badge">Getting Started</span></h2>
-                <p>Python is a high-level, interpreted, general-purpose language known for its clean, readable syntax. It powers web apps, data science, automation, AI and much more.</p><div class="info-box"><i class="fas fa-lightbulb"></i> <strong>Why Python?</strong><ul style="margin-top:8px;"><li>Simple, English-like syntax — great for beginners</li><li>Huge ecosystem: Django, Flask, NumPy, Pandas, TensorFlow</li><li>Runs on Windows, macOS and Linux</li></ul></div>
-                <div class="code-block" data-lang="python"><pre># This is a comment
-print("Hello, Python!")</pre></div>
-                <div class="output-block"><b>Output:</b><br>Hello, Python!</div>
+                <h2>🐘 1. Introduction to PHP <span class="section-badge">Getting Started</span></h2>
+                <p>PHP is a widely-used, open-source, server-side scripting language designed for web development. PHP code runs on the server and outputs plain HTML to the browser.</p>
+                <div class="code-block" data-lang="php"><pre>&lt;?php
+// This is a PHP comment
+echo "Hello, World!";
+?&gt;</pre></div>
+                <div class="output-block"><b>Output:</b><br>Hello, World!</div>
                 
             </div>
 
             <div class="topic-section" id="section2">
-                <h2>📦 2. Variables & Data Types <span class="section-badge">Values & Types</span></h2>
-                <p>Python is dynamically typed — you don't declare a type, it's inferred automatically from the value.</p>
-                <div class="code-block" data-lang="python"><pre>age = 25                 # int
-price = 19.99             # float
-language = "Python"       # str
-is_awesome = True         # bool
+                <h2>📊 2. Variables & Data Types <span class="section-badge">Values & Types</span></h2>
+                <p>PHP variables start with a <code class='code-inline'>$</code> sign and are loosely typed.</p>
+                <div class="code-block" data-lang="php"><pre>&lt;?php
+$name = "SyntaxLab";
+$age = 5;
+$price = 29.99;
+$isActive = true;
 
-print(type(age))
-print(f"{language} costs ${price}")</pre></div>
-                <div class="output-block"><b>Output:</b><br>&lt;class 'int'&gt;
-Python costs $19.99</div>
+echo "Name: " . $name;
+?&gt;</pre></div>
+                <div class="output-block"><b>Output:</b><br>Name: SyntaxLab</div>
                 
             </div>
 
             <div class="topic-section" id="section3">
                 <h2>🧮 3. Operators <span class="section-badge">Expressions</span></h2>
-                <p>Python supports arithmetic, comparison, logical and membership operators.</p>
-                <div class="code-block" data-lang="python"><pre>a, b = 10, 3
-print(a + b, a // b, a ** 2)   # + - * / // (floor div) ** (power)
-print(a &gt; b and b &gt; 0)
-print(5 in [1, 3, 5, 7])</pre></div>
+                <p>PHP supports arithmetic, comparison, logical, and the string concatenation (<code class='code-inline'>.</code>) operator.</p>
+                <div class="code-block" data-lang="php"><pre>&lt;?php
+$a = 10; $b = 3;
+echo $a + $b;
+echo "&lt;br&gt;";
+echo $a . " items";   // concatenation
+echo "&lt;br&gt;";
+var_dump($a == "10", $a === "10");
+?&gt;</pre></div>
                 
                 
             </div>
 
             <div class="topic-section" id="section4">
-                <h2>⚖️ 4. Control Flow <span class="section-badge">if / elif / else</span></h2>
-                <p>Python uses indentation (not braces) to define code blocks.</p>
-                <div class="code-block" data-lang="python"><pre>score = 85
+                <h2>⚖️ 4. Conditional Statements <span class="section-badge">if / elseif / switch</span></h2>
+                <p>Control program flow with if, elseif, else and switch statements.</p>
+                <div class="code-block" data-lang="php"><pre>&lt;?php
+$score = 85;
 
-if score &gt;= 90:
-    grade = "A"
-elif score &gt;= 70:
-    grade = "B"
-else:
-    grade = "C"
-
-print(f"Your grade is {grade}")</pre></div>
-                <div class="output-block"><b>Output:</b><br>Your grade is B</div>
+if ($score &gt;= 90) {
+    echo "Grade A";
+} elseif ($score &gt;= 70) {
+    echo "Grade B";
+} else {
+    echo "Need improvement";
+}
+?&gt;</pre></div>
+                <div class="output-block"><b>Output:</b><br>Grade B</div>
                 
             </div>
 
             <div class="topic-section" id="section5">
-                <h2>🔄 5. Loops <span class="section-badge">for / while</span></h2>
-                <p>Iterate over sequences with <code class='code-inline'>for</code>, or repeat while a condition holds with <code class='code-inline'>while</code>.</p>
-                <div class="code-block" data-lang="python"><pre>for fruit in ["apple", "banana", "orange"]:
-    print(fruit)
+                <h2>🔄 5. Loops <span class="section-badge">for / while / foreach</span></h2>
+                <p>Repeat code blocks with for, while and foreach loops.</p>
+                <div class="code-block" data-lang="php"><pre>&lt;?php
+for ($i = 0; $i &lt; 5; $i++) {
+    echo $i . "&lt;br&gt;";
+}
 
-for i in range(3):
-    print(f"Count: {i}")
-
-count = 0
-while count &lt; 3:
-    print("while:", count)
-    count += 1</pre></div>
+$colors = ["red", "green", "blue"];
+foreach ($colors as $color) {
+    echo $color . "&lt;br&gt;";
+}
+?&gt;</pre></div>
                 
                 
             </div>
 
             <div class="topic-section" id="section6">
-                <h2>⚙️ 6. Functions <span class="section-badge">Reusable Code</span></h2>
-                <p>Functions are defined with <code class='code-inline'>def</code> and can take default and keyword arguments.</p>
-                <div class="code-block" data-lang="python"><pre>def greet(name="Guest"):
-    return f"Hello, {name}!"
+                <h2>⚙️ 6. Functions & Arrays <span class="section-badge">Reusable Code</span></h2>
+                <p>Create reusable functions and work with indexed or associative arrays.</p>
+                <div class="code-block" data-lang="php"><pre>&lt;?php
+function greet($name) {
+    return "Hello, $name!";
+}
 
-print(greet("Python Learner"))
-print(greet())
+$fruits = ["apple", "banana", "orange"];
+array_push($fruits, "grape");
+$count = count($fruits);
 
-def power(base, exp=2):
-    return base ** exp
-
-print(power(3))</pre></div>
-                <div class="output-block"><b>Output:</b><br>Hello, Python Learner!
-Hello, Guest!
-9</div>
+$person = ["name" =&gt; "John", "age" =&gt; 30];
+echo $person['name'];
+?&gt;</pre></div>
+                
                 
             </div>
 
             <div class="topic-section" id="section7">
-                <h2>📊 7. Lists <span class="section-badge">Ordered, Mutable</span></h2>
-                <p>Lists store ordered, changeable collections and support slicing and comprehensions.</p>
-                <div class="code-block" data-lang="python"><pre>colors = ["red", "green", "blue"]
-colors.append("yellow")
-colors.remove("green")
-
-squares = [x**2 for x in range(5)]  # list comprehension
-print(colors)
-print(squares)
-print(colors[0:2])   # slicing</pre></div>
-                <div class="output-block"><b>Output:</b><br>['red', 'blue', 'yellow']
-[0, 1, 4, 9, 16]
-['red', 'blue']</div>
+                <h2>🔤 7. Strings <span class="section-badge">Text Handling</span></h2>
+                <p>PHP has a huge library of built-in string functions.</p>
+                <div class="code-block" data-lang="php"><pre>&lt;?php
+$str = "syntaxlab";
+echo strtoupper($str);
+echo "&lt;br&gt;";
+echo strlen($str);
+echo "&lt;br&gt;";
+echo str_replace("lab", "Lab", $str);
+?&gt;</pre></div>
+                <div class="output-block"><b>Output:</b><br>SYNTAXLAB&lt;br&gt;9&lt;br&gt;syntaxLab</div>
                 
             </div>
 
             <div class="topic-section" id="section8">
-                <h2>🔑 8. Dictionaries <span class="section-badge">Key-Value Pairs</span></h2>
-                <p>Dictionaries store data as key-value pairs, ideal for structured, labeled data.</p>
-                <div class="code-block" data-lang="python"><pre>person = {"name": "John", "age": 30, "city": "New York"}
-person["email"] = "john@example.com"
+                <h2>📝 8. Form Handling (GET/POST) <span class="section-badge">User Input</span></h2>
+                <p>Retrieve data from HTML forms using the <code class='code-inline'>$_GET</code> or <code class='code-inline'>$_POST</code> superglobals.</p>
+                <div class="code-block" data-lang="php"><pre>&lt;form method="POST" action="process.php"&gt;
+  &lt;input type="text" name="username"&gt;
+  &lt;input type="submit"&gt;
+&lt;/form&gt;
 
-for key, value in person.items():
-    print(key, "-&gt;", value)</pre></div>
+&lt;?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    echo "Welcome, $username!";
+}
+?&gt;</pre></div>
                 
                 
             </div>
 
             <div class="topic-section" id="section9">
-                <h2>📐 9. Tuples & Sets <span class="section-badge">Immutable & Unique</span></h2>
-                <p>Tuples are ordered and immutable; sets store unique, unordered items.</p>
-                <div class="code-block" data-lang="python"><pre>point = (10, 20)          # tuple - cannot be changed
-x, y = point              # unpacking
+                <h2>🗄️ 9. Working with Databases (PDO) <span class="section-badge">MySQL Access</span></h2>
+                <p>Connect to a MySQL database using PDO for safe, parameterized queries.</p>
+                <div class="code-block" data-lang="php"><pre>&lt;?php
+$pdo = new PDO("mysql:host=localhost;dbname=test", "user", "pass");
 
-unique_nums = {1, 2, 2, 3, 3, 3}
-print(x, y)
-print(unique_nums)</pre></div>
-                <div class="output-block"><b>Output:</b><br>10 20
-{1, 2, 3}</div>
+$stmt = $pdo-&gt;prepare("SELECT * FROM users WHERE id = ?");
+$stmt-&gt;execute([$id]);
+$user = $stmt-&gt;fetch();
+
+$sql = "INSERT INTO users (name) VALUES (:name)";
+$stmt = $pdo-&gt;prepare($sql);
+$stmt-&gt;execute(['name' =&gt; $name]);
+?&gt;</pre></div>
+                
                 
             </div>
 
             <div class="topic-section" id="section10">
-                <h2>🧵 10. Strings <span class="section-badge">Text Handling</span></h2>
-                <p>Strings support slicing, formatting and many built-in methods.</p>
-                <div class="code-block" data-lang="python"><pre>name = "syntaxlab"
-print(name.upper())
-print(name.capitalize())
-print(name[0:6])
-print(f"Length: {len(name)}")</pre></div>
-                <div class="output-block"><b>Output:</b><br>SYNTAXLAB
-Syntaxlab
-syntax
-Length: 9</div>
+                <h2>🔐 10. Sessions & Cookies <span class="section-badge">Maintaining State</span></h2>
+                <p>HTTP is stateless — sessions and cookies let you remember users across page loads.</p>
+                <div class="code-block" data-lang="php"><pre>&lt;?php
+session_start();
+$_SESSION['user_id'] = 123;
+
+setcookie("theme", "dark", time() + 86400, "/");
+
+if (isset($_SESSION['user_id'])) {
+    echo "User is logged in";
+}
+?&gt;</pre></div>
+                
                 
             </div>
 
             <div class="topic-section" id="section11">
-                <h2>📄 11. File Handling <span class="section-badge">Reading & Writing</span></h2>
-                <p>Use <code class='code-inline'>with open(...)</code> so files are closed automatically, even if an error occurs.</p>
-                <div class="code-block" data-lang="python"><pre>with open("data.txt", "w") as file:
-    file.write("Hello Python!\n")
+                <h2>🏗️ 11. Object-Oriented PHP <span class="section-badge">Classes & Objects</span></h2>
+                <p>PHP fully supports object-oriented programming with classes, properties and methods.</p>
+                <div class="code-block" data-lang="php"><pre>&lt;?php
+class Student {
+    public $name;
+    private $grade;
 
-with open("data.txt", "r") as file:
-    content = file.read()
-    print(content)</pre></div>
-                
-                
-            </div>
+    public function __construct($name, $grade) {
+        $this-&gt;name = $name;
+        $this-&gt;grade = $grade;
+    }
 
-            <div class="topic-section" id="section12">
-                <h2>⚠️ 12. Exception Handling <span class="section-badge">try / except / finally</span></h2>
-                <p>Handle runtime errors gracefully instead of crashing the whole program.</p>
-                <div class="code-block" data-lang="python"><pre>try:
-    result = 10 / 0
-except ZeroDivisionError:
-    print("Cannot divide by zero!")
-else:
-    print("No errors occurred")
-finally:
-    print("This always runs")</pre></div>
-                <div class="output-block"><b>Output:</b><br>Cannot divide by zero!
-This always runs</div>
-                
-            </div>
+    public function display() {
+        return "{$this-&gt;name} scored {$this-&gt;grade}";
+    }
+}
 
-            <div class="topic-section" id="section13">
-                <h2>🏗️ 13. Object-Oriented Programming <span class="section-badge">Classes & Objects</span></h2>
-                <p>Classes are blueprints for objects, bundling data (attributes) and behavior (methods).</p>
-                <div class="code-block" data-lang="python"><pre>class Student:
-    def __init__(self, name, grade):
-        self.name = name
-        self.grade = grade
-
-    def display(self):
-        return f"{self.name} scored {self.grade}"
-
-student1 = Student("Alice", "A")
-print(student1.display())</pre></div>
+$s = new Student("Alice", "A");
+echo $s-&gt;display();
+?&gt;</pre></div>
                 <div class="output-block"><b>Output:</b><br>Alice scored A</div>
                 
             </div>
 
+            <div class="topic-section" id="section12">
+                <h2>🌳 12. Inheritance <span class="section-badge">extends</span></h2>
+                <p>A child class inherits properties and methods from its parent using <code class='code-inline'>extends</code>.</p>
+                <div class="code-block" data-lang="php"><pre>&lt;?php
+class Animal {
+    public function speak() {
+        echo "Animal makes a sound";
+    }
+}
+
+class Dog extends Animal {
+    public function speak() {
+        echo "Dog barks";
+    }
+}
+
+(new Dog())-&gt;speak();
+?&gt;</pre></div>
+                <div class="output-block"><b>Output:</b><br>Dog barks</div>
+                
+            </div>
+
+            <div class="topic-section" id="section13">
+                <h2>⚠️ 13. Exception Handling <span class="section-badge">try / catch / finally</span></h2>
+                <p>Gracefully handle runtime errors using try-catch blocks.</p>
+                <div class="code-block" data-lang="php"><pre>&lt;?php
+try {
+    $result = 10 / 0;
+    if (is_nan($result) || is_infinite($result)) {
+        throw new Exception("Division error");
+    }
+} catch (Exception $e) {
+    echo "Caught: " . $e-&gt;getMessage();
+} finally {
+    echo "\nDone.";
+}
+?&gt;</pre></div>
+                
+                
+            </div>
+
             <div class="topic-section" id="section14">
-                <h2>🌳 14. Inheritance <span class="section-badge">Extending Classes</span></h2>
-                <p>A subclass inherits attributes and methods from its parent class using <code class='code-inline'>super()</code>.</p>
-                <div class="code-block" data-lang="python"><pre>class Student:
-    def __init__(self, name):
-        self.name = name
+                <h2>📄 14. File Handling <span class="section-badge">Reading & Writing</span></h2>
+                <p>PHP provides functions like <code class='code-inline'>fopen()</code>, <code class='code-inline'>fwrite()</code> and <code class='code-inline'>file_get_contents()</code> for working with files.</p>
+                <div class="code-block" data-lang="php"><pre>&lt;?php
+$file = fopen("data.txt", "w");
+fwrite($file, "Hello PHP!");
+fclose($file);
 
-class GraduateStudent(Student):
-    def __init__(self, name, thesis):
-        super().__init__(name)
-        self.thesis = thesis
-
-g = GraduateStudent("Meera", "AI Ethics")
-print(g.name, "-", g.thesis)</pre></div>
-                <div class="output-block"><b>Output:</b><br>Meera - AI Ethics</div>
+$content = file_get_contents("data.txt");
+echo $content;
+?&gt;</pre></div>
+                <div class="output-block"><b>Output:</b><br>Hello PHP!</div>
                 
             </div>
 
             <div class="topic-section" id="section15">
-                <h2>🧩 15. Modules & Packages <span class="section-badge">Code Organization</span></h2>
-                <p>Modules let you split code across files and reuse built-in or third-party functionality.</p>
-                <div class="code-block" data-lang="python"><pre>import math
-from datetime import date
-
-print(math.sqrt(16))
-print(date.today())</pre></div>
-                <div class="output-block"><b>Output:</b><br>4.0
-2026-09-20</div>
+                <h2>🧰 15. Superglobals <span class="section-badge">Built-in Arrays</span></h2>
+                <p>PHP provides several built-in superglobal arrays accessible anywhere in your code, such as <code class='code-inline'>$_SERVER</code> and <code class='code-inline'>$_GET</code>.</p>
+                <div class="code-block" data-lang="php"><pre>&lt;?php
+echo $_SERVER['PHP_SELF'];
+echo $_SERVER['REQUEST_METHOD'];
+print_r($_GET);
+?&gt;</pre></div>
+                
                 
             </div>
 
             <div class="topic-section" id="section16">
-                <h2>🎯 16. Lambda & Comprehensions <span class="section-badge">Functional Style</span></h2>
-                <p>Lambdas are small anonymous functions; comprehensions build lists/dicts in a single readable line.</p>
-                <div class="code-block" data-lang="python"><pre>square = lambda x: x * x
-print(square(5))
+                <h2>📦 16. Composer & Namespaces <span class="section-badge">Modern PHP</span></h2>
+                <p>Namespaces prevent naming collisions; Composer is the standard dependency manager for PHP packages.</p>
+                <div class="code-block" data-lang="php"><pre>&lt;?php
+namespace App\Models;
 
-nums = [1, 2, 3, 4, 5]
-even_squares = [n*n for n in nums if n % 2 == 0]
-print(even_squares)</pre></div>
-                <div class="output-block"><b>Output:</b><br>25
-[4, 16]</div>
-                
-            </div>
+class User {
+    public function __construct(public string $name) {}
+}
 
-            <div class="topic-section" id="section17">
-                <h2>📦 17. Virtual Environments & pip <span class="section-badge">Package Management</span></h2>
-                <p>Use virtual environments to isolate project dependencies, and <code class='code-inline'>pip</code> to install packages.</p>
-                <div class="code-block" data-lang="python"><pre># Create and activate a virtual environment
-python -m venv venv
-source venv/bin/activate     # macOS/Linux
-venv\Scripts\activate        # Windows
-
-# Install a package
-pip install requests</pre></div>
-                
-                
-            </div>
-
-            <div class="topic-section" id="section18">
-                <h2>🌐 18. Working with APIs (requests) <span class="section-badge">Real-World Python</span></h2>
-                <p>The popular <code class='code-inline'>requests</code> library makes it easy to call web APIs and work with JSON data.</p>
-                <div class="code-block" data-lang="python"><pre>import requests
-
-response = requests.get("https://api.example.com/users")
-data = response.json()
-print(data)</pre></div>
+// composer.json snippet:
+// { "require": { "monolog/monolog": "^3.0" } }
+// then: composer install</pre></div>
                 
                 
             </div>
@@ -347,7 +355,7 @@ print(data)</pre></div>
     </div>
 </div>
 
-<footer class="footer"><p>© 2026 RT_SYNTAXTLAB | Python - Simple, powerful, and versatile.</p></footer>
+<footer class="footer"><p>© 2026 RT_SYNTAXTLAB | PHP - Server-side scripting power.</p></footer>
 <script src="script.js"></script>
 </body>
 </html>
