@@ -3,182 +3,384 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyntaxLab | Learn JavaScript</title>
+    <title>RT_SYNTAXTLAB | Learn JavaScript</title>
+    <meta name="description" content="Learn JavaScript with clear explanations, topic-by-topic lessons and runnable code examples on RT_SYNTAXTLAB.">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
 <nav class="navbar">
     <div class="nav-container">
-        <div class="logo-area"><div class="logo-icon"><i class="fab fa-js"></i></div><span class="logo-text">SyntaxLab</span></div>
-        <div class="nav-links"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="logo-area" onclick="location.href='index.html'">
+            <div class="logo-icon"><img src="logo.svg" alt="RT_SYNTAXTLAB logo"></div>
+            <span class="logo-text">RT_<span>SYNTAXTLAB</span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="html.html" class="nav-link">HTML</a>
+            <a href="css.html" class="nav-link">CSS</a>
+            <a href="javascript.html" class="nav-link active">JavaScript</a>
+            <a href="python.html" class="nav-link">Python</a>
+            <a href="java.html" class="nav-link">Java</a>
+            <a href="php.html" class="nav-link">PHP</a>
+            <a href="c.html" class="nav-link">C</a>
+            <a href="cpp.html" class="nav-link">C++</a>
+            <a href="sql.html" class="nav-link">SQL</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
 </nav>
-
 <div class="language-container">
     <div class="language-header">
-        <h1>Learn JavaScript</h1>
-        <p class="intro">JavaScript is the programming language of the web. It adds interactivity, dynamic content, and logic to websites.</p>
+        <div class="breadcrumb"><a href="index.html">Home</a> / JavaScript</div>
+        <div class="language-header-inner">
+            <div>
+                <h1><i class="fab fa-js"></i> Learn JavaScript <span class="badge">Complete Tutorial</span></h1>
+                <p class="intro">JavaScript is the programming language of the web. It adds interactivity, dynamic content, and logic to websites, and also powers servers and apps via Node.js.</p>
+            </div>
+            <a class="btn btn-outline gfg-source-btn" href="https://www.geeksforgeeks.org/javascript/javascript-tutorial/" target="_blank" rel="noopener">
+                <i class="fas fa-external-link-alt"></i> Full Tutorial on GeeksforGeeks
+            </a>
+        </div>
     </div>
 
     <div class="content-grid">
         <aside class="topics-sidebar">
             <h3><i class="fas fa-list-ul"></i> Topics</h3>
             <ul class="topic-list">
-                <li><i class="fas fa-code"></i> Variables & Data Types</li>
-                <li><i class="fas fa-calculator"></i> Operators & Expressions</li>
-                <li><i class="fas fa-random"></i> Control Flow (if/else, loops)</li>
-                <li><i class="fas fa-cube"></i> Functions & Scope</li>
-                <li><i class="fas fa-list"></i> Arrays & Objects</li>
-                <li><i class="fas fa-exchange-alt"></i> DOM Manipulation</li>
-                <li><i class="fas fa-clock"></i> Events & Callbacks</li>
-                <li><i class="fas fa-cloud"></i> Async JavaScript (Promises)</li>
+                <li><i class="fas fa-flag"></i> 1. Introduction</li>
+                <li><i class="fas fa-box"></i> 2. Variables</li>
+                <li><i class="fas fa-shapes"></i> 3. Data Types</li>
+                <li><i class="fas fa-calculator"></i> 4. Operators</li>
+                <li><i class="fas fa-random"></i> 5. Control Flow</li>
+                <li><i class="fas fa-sync"></i> 6. Loops</li>
+                <li><i class="fas fa-cogs"></i> 7. Functions</li>
+                <li><i class="fas fa-long-arrow-alt-right"></i> 8. Arrow Functions</li>
+                <li><i class="fas fa-list-ol"></i> 9. Arrays</li>
+                <li><i class="fas fa-filter"></i> 10. Array Methods</li>
+                <li><i class="fas fa-cube"></i> 11. Objects</li>
+                <li><i class="fas fa-box-open"></i> 12. Destructuring & Spread</li>
+                <li><i class="fas fa-crosshairs"></i> 13. DOM Manipulation</li>
+                <li><i class="fas fa-mouse-pointer"></i> 14. Events</li>
+                <li><i class="fas fa-cloud"></i> 15. Async / Promises</li>
+                <li><i class="fas fa-satellite-dish"></i> 16. Fetch API</li>
+                <li><i class="fas fa-magic"></i> 17. ES6+ Features</li>
+                <li><i class="fas fa-exclamation-triangle"></i> 18. Error Handling</li>
             </ul>
             <div class="progress-wrapper">
-                <div class="progress-label"><span>Progress</span><span class="progress-percent">0%</span></div>
+                <div class="progress-label"><span><i class="fas fa-chart-line"></i> Progress</span><span class="progress-percent">0%</span></div>
                 <div class="progress-bar"><div class="progress-fill"></div></div>
+                <div class="reset-progress">
+                    <button class="reset-btn"><i class="fas fa-sync-alt"></i> Reset Progress</button>
+                </div>
             </div>
         </aside>
 
         <main class="main-content">
-            <div class="topic-section">
-                <h2>📦 Variables & Data Types</h2>
-                <p>JavaScript variables store data values. Use let, const, or var. Data types include strings, numbers, booleans, and more.</p>
-                <div class="code-block"><pre>let name = "SyntaxLab";
-const year = 2026;
-var isAwesome = true;
-
-let count = 42;
-let price = 19.99;
-let languages = ["HTML", "CSS", "JS"];</pre></div>
+            <div class="topic-section" id="section1">
+                <h2>🚀 1. Introduction to JavaScript <span class="section-badge">Getting Started</span></h2>
+                <p>JavaScript is a lightweight, interpreted programming language that runs in every modern browser. Along with HTML and CSS, it is one of the three core technologies of the web, responsible for interactivity and dynamic behavior.</p><div class="info-box"><i class="fas fa-lightbulb"></i> <strong>Where can JavaScript run?</strong><ul style="margin-top:8px;"><li>Inside the browser (client-side) for interactivity</li><li>On servers using Node.js (back-end)</li><li>In mobile apps, desktop apps and even IoT devices</li></ul></div>
+                <div class="code-block" data-lang="javascript"><pre>console.log("Hello, JavaScript!");
+// Add this inside a &lt;script&gt; tag or a .js file linked with &lt;script src="app.js"&gt;&lt;/script&gt;</pre></div>
+                <div class="output-block"><b>Output:</b><br>Hello, JavaScript!</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>🧮 Operators & Expressions</h2>
-                <p>Arithmetic, comparison, and logical operators help manipulate data.</p>
-                <div class="code-block"><pre>let sum = 10 + 5;
-let isEqual = (10 === 10);
-let isAdult = (age >= 18) ? "Yes" : "No";
+            <div class="topic-section" id="section2">
+                <h2>📦 2. Variables: var, let & const <span class="section-badge">Core Concepts</span></h2>
+                <p>Variables store data values. JavaScript offers three ways to declare them, each with different scoping rules.</p>
+                <div class="code-block" data-lang="javascript"><pre>var oldStyle = "function-scoped";
+let counter = 10;        // block-scoped, reassignable
+const pi = 3.14159;      // block-scoped, cannot be reassigned
 
-// Logical operators
-if (isLoggedIn &amp;&amp; hasPermission) {
-  console.log("Access granted");
+counter = 20;            // OK
+// pi = 3;               // Error! Cannot reassign a const</pre></div>
+                
+                <div class="tip-box"><i class="fas fa-graduation-cap"></i> <strong>Best Practice:</strong> Prefer <code class='code-inline'>const</code> by default, and only use <code class='code-inline'>let</code> when the value needs to change. Avoid <code class='code-inline'>var</code> in modern code.</div>
+            </div>
+
+            <div class="topic-section" id="section3">
+                <h2>🧬 3. Data Types <span class="section-badge">Values & Types</span></h2>
+                <p>JavaScript has primitive types (string, number, boolean, null, undefined, symbol, bigint) and reference types (object, array, function).</p>
+                <div class="code-block" data-lang="javascript"><pre>let name = "SyntaxLab";     // string
+let count = 42;             // number
+let price = 19.99;          // number (no separate float type)
+let isActive = true;        // boolean
+let empty = null;           // null
+let notSet;                 // undefined
+let user = { name: "Sam" }; // object
+let list = [1, 2, 3];       // array (a special object)
+
+console.log(typeof count, typeof name, typeof user);</pre></div>
+                <div class="output-block"><b>Output:</b><br>number string object</div>
+                
+            </div>
+
+            <div class="topic-section" id="section4">
+                <h2>🧮 4. Operators <span class="section-badge">Expressions</span></h2>
+                <p>Arithmetic, comparison, logical and ternary operators let you build expressions and make decisions.</p>
+                <div class="code-block" data-lang="javascript"><pre>let sum = 10 + 5;              // arithmetic
+let strictEqual = (10 === "10");  // false: checks type too
+let looseEqual  = (10 == "10");   // true: converts type first
+let isAdult = (18 &gt;= 18) ? "Yes" : "No";  // ternary
+
+if (true &amp;&amp; !false) {
+  console.log("Logical AND / NOT works");
 }</pre></div>
+                <div class="output-block"><b>Output:</b><br>Logical AND / NOT works</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>🔄 Control Flow</h2>
-                <p>Control the flow of execution with conditionals and loops.</p>
-                <div class="code-block"><pre>// if-else statement
-if (score >= 90) {
-  grade = 'A';
-} else if (score >= 70) {
-  grade = 'B';
+            <div class="topic-section" id="section5">
+                <h2>🔄 5. Control Flow <span class="section-badge">if / else / switch</span></h2>
+                <p>Control the path your program takes using conditionals.</p>
+                <div class="code-block" data-lang="javascript"><pre>let score = 82;
+
+if (score &gt;= 90) {
+  console.log("Grade A");
+} else if (score &gt;= 70) {
+  console.log("Grade B");
+} else {
+  console.log("Grade C");
 }
 
-// for loop
-for (let i = 0; i &lt; 5; i++) {
-  console.log("Count: " + i);
-}
-
-// while loop
-let counter = 0;
-while (counter &lt; 3) {
-  counter++;
+switch (new Date().getDay()) {
+  case 0: console.log("Sunday"); break;
+  case 6: console.log("Saturday"); break;
+  default: console.log("Weekday");
 }</pre></div>
+                <div class="output-block"><b>Output:</b><br>Grade B</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>⚙️ Functions & Scope</h2>
-                <p>Functions are reusable blocks of code. Scope determines variable accessibility.</p>
-                <div class="code-block"><pre>function greet(name) {
+            <div class="topic-section" id="section6">
+                <h2>🔁 6. Loops <span class="section-badge">for / while / do-while</span></h2>
+                <p>Loops repeat a block of code while a condition holds true.</p>
+                <div class="code-block" data-lang="javascript"><pre>for (let i = 0; i &lt; 3; i++) {
+  console.log("for loop:", i);
+}
+
+let i = 0;
+while (i &lt; 3) {
+  console.log("while loop:", i);
+  i++;
+}
+
+for (const fruit of ["apple", "mango"]) {
+  console.log("for...of:", fruit);
+}</pre></div>
+                <div class="output-block"><b>Output:</b><br>for loop: 0
+for loop: 1
+for loop: 2 ...</div>
+                
+            </div>
+
+            <div class="topic-section" id="section7">
+                <h2>⚙️ 7. Functions <span class="section-badge">Reusable Code</span></h2>
+                <p>Functions bundle reusable logic. They can take parameters, return values, and even have default parameters.</p>
+                <div class="code-block" data-lang="javascript"><pre>function greet(name = "Guest") {
   return `Hello, ${name}!`;
 }
 
-const add = (a, b) => a + b;
+console.log(greet("Riya"));
+console.log(greet());
 
-// Scope example
-let globalVar = "I'm global";
-
-function showVar() {
-  let localVar = "I'm local";
-  console.log(globalVar); // Accessible
-}</pre></div>
+function sum(...numbers) {   // rest parameters
+  return numbers.reduce((a, b) =&gt; a + b, 0);
+}
+console.log(sum(1, 2, 3, 4));</pre></div>
+                <div class="output-block"><b>Output:</b><br>Hello, Riya!
+Hello, Guest!
+10</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>📊 Arrays & Objects</h2>
-                <p>Arrays store ordered lists. Objects store key-value pairs for structured data.</p>
-                <div class="code-block"><pre>// Array methods
-let fruits = ["apple", "banana", "orange"];
-fruits.push("grape");
-fruits.forEach(fruit => console.log(fruit));
+            <div class="topic-section" id="section8">
+                <h2>🏹 8. Arrow Functions <span class="section-badge">Concise Syntax</span></h2>
+                <p>Arrow functions provide a shorter syntax and do not rebind <code class='code-inline'>this</code>, which is useful inside callbacks.</p>
+                <div class="code-block" data-lang="javascript"><pre>const add = (a, b) =&gt; a + b;
+const square = n =&gt; n * n;
+const sayHi = () =&gt; console.log("Hi!");
 
-// Objects
-let user = {
+console.log(add(4, 5));
+console.log(square(6));</pre></div>
+                <div class="output-block"><b>Output:</b><br>9
+36</div>
+                
+            </div>
+
+            <div class="topic-section" id="section9">
+                <h2>📚 9. Arrays <span class="section-badge">Ordered Lists</span></h2>
+                <p>Arrays store ordered collections of values and come with many built-in helper methods.</p>
+                <div class="code-block" data-lang="javascript"><pre>let fruits = ["apple", "banana", "orange"];
+fruits.push("grape");        // add to end
+fruits.shift();              // remove from start
+console.log(fruits.length, fruits.includes("grape"));
+console.log(fruits.join(", "));</pre></div>
+                <div class="output-block"><b>Output:</b><br>3 true
+banana, orange, grape</div>
+                
+            </div>
+
+            <div class="topic-section" id="section10">
+                <h2>🧰 10. Array Methods: map, filter, reduce <span class="section-badge">Functional Style</span></h2>
+                <p>These three methods are the workhorses of modern JavaScript for transforming data without writing manual loops.</p>
+                <div class="code-block" data-lang="javascript"><pre>const nums = [1, 2, 3, 4, 5];
+
+const doubled = nums.map(n =&gt; n * 2);
+const evens   = nums.filter(n =&gt; n % 2 === 0);
+const total   = nums.reduce((acc, n) =&gt; acc + n, 0);
+
+console.log(doubled);
+console.log(evens);
+console.log(total);</pre></div>
+                <div class="output-block"><b>Output:</b><br>[2, 4, 6, 8, 10]
+[2, 4]
+15</div>
+                
+            </div>
+
+            <div class="topic-section" id="section11">
+                <h2>🧱 11. Objects <span class="section-badge">Key-Value Data</span></h2>
+                <p>Objects store structured data as key-value pairs and can also hold methods.</p>
+                <div class="code-block" data-lang="javascript"><pre>const user = {
   name: "SyntaxMaster",
   age: 25,
-  skills: ["JS", "React", "Node"]
+  greet() {
+    return `Hi, I am ${this.name}`;
+  }
 };
 
-console.log(user.name);</pre></div>
+console.log(user.name);
+console.log(user["age"]);
+console.log(user.greet());</pre></div>
+                <div class="output-block"><b>Output:</b><br>SyntaxMaster
+25
+Hi, I am SyntaxMaster</div>
+                
             </div>
 
-            <div class="topic-section">
-                <h2>🎯 DOM Manipulation</h2>
-                <p>Interact with HTML elements dynamically using the Document Object Model.</p>
-                <div class="code-block"><pre>// Selecting elements
-const heading = document.querySelector('h1');
+            <div class="topic-section" id="section12">
+                <h2>🎁 12. Destructuring & Spread <span class="section-badge">Modern Syntax</span></h2>
+                <p>Destructuring pulls values out of arrays/objects into variables; the spread operator expands them back out.</p>
+                <div class="code-block" data-lang="javascript"><pre>const user = { name: "Sam", age: 30, city: "Delhi" };
+const { name, city } = user;
+console.log(name, city);
+
+const nums = [1, 2, 3];
+const copy = [...nums, 4, 5];
+console.log(copy);
+
+const merged = { ...user, age: 31 };
+console.log(merged.age);</pre></div>
+                <div class="output-block"><b>Output:</b><br>Sam Delhi
+[1, 2, 3, 4, 5]
+31</div>
+                
+            </div>
+
+            <div class="topic-section" id="section13">
+                <h2>🎯 13. DOM Manipulation <span class="section-badge">Interacting with HTML</span></h2>
+                <p>The Document Object Model (DOM) lets JavaScript read and change the page after it has loaded.</p>
+                <div class="code-block" data-lang="javascript"><pre>const heading = document.querySelector("h1");
 heading.textContent = "Hello JavaScript!";
 
-// Creating elements
-const newDiv = document.createElement('div');
-newDiv.innerHTML = '&lt;p&gt;Dynamic content&lt;/p&gt;';
-document.body.appendChild(newDiv);</pre></div>
+const newItem = document.createElement("li");
+newItem.textContent = "New list item";
+document.querySelector("ul").appendChild(newItem);</pre></div>
+                
+                <div class="tip-box"><i class="fas fa-graduation-cap"></i> <strong>Tip:</strong> Always wait for <code class='code-inline'>DOMContentLoaded</code> before querying elements, or place your script tag at the end of the body.</div>
             </div>
 
-            <div class="topic-section">
-                <h2>🎪 Events & Callbacks</h2>
-                <p>Respond to user actions like clicks, typing, and mouse movements.</p>
-                <div class="code-block"><pre>const button = document.getElementById('myButton');
-button.addEventListener('click', () => {
-  alert('Button clicked!');
+            <div class="topic-section" id="section14">
+                <h2>🎪 14. Events <span class="section-badge">Clicks, Input & More</span></h2>
+                <p>Event listeners let your page react to user actions such as clicks, keystrokes and form submissions.</p>
+                <div class="code-block" data-lang="javascript"><pre>const button = document.getElementById("myButton");
+button.addEventListener("click", () =&gt; {
+  alert("Button clicked!");
 });
 
-// Input event
-input.addEventListener('input', (e) => {
-  console.log(e.target.value);
+document.getElementById("nameInput").addEventListener("input", (e) =&gt; {
+  console.log("Typed:", e.target.value);
 });</pre></div>
+                
+                
             </div>
 
-            <div class="topic-section">
-                <h2>☁️ Async JavaScript</h2>
-                <p>Handle asynchronous operations with Promises and async/await.</p>
-                <div class="code-block"><pre>// Promise example
-fetch('https://api.example.com/data')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error(error));
+            <div class="topic-section" id="section15">
+                <h2>☁️ 15. Promises & Async/Await <span class="section-badge">Asynchronous JS</span></h2>
+                <p>Promises represent a value that will be available later. <code class='code-inline'>async/await</code> makes asynchronous code read like synchronous code.</p>
+                <div class="code-block" data-lang="javascript"><pre>function delay(ms) {
+  return new Promise(resolve =&gt; setTimeout(resolve, ms));
+}
 
-// Async/Await
-async function getData() {
+async function run() {
+  console.log("Start");
+  await delay(1000);
+  console.log("1 second later");
+}
+
+run();</pre></div>
+                <div class="output-block"><b>Output:</b><br>Start
+(1 second later)</div>
+                
+            </div>
+
+            <div class="topic-section" id="section16">
+                <h2>🌐 16. Fetch API & JSON <span class="section-badge">Talking to Servers</span></h2>
+                <p>The Fetch API is used to make network requests to APIs and servers, usually returning JSON data.</p>
+                <div class="code-block" data-lang="javascript"><pre>async function getUsers() {
   try {
-    const response = await fetch(url);
+    const response = await fetch("https://api.example.com/users");
     const data = await response.json();
-    return data;
+    console.log(data);
   } catch (error) {
-    console.log(error);
+    console.error("Request failed:", error);
   }
-}</pre></div>
+}
+
+getUsers();</pre></div>
+                
+                
             </div>
+
+            <div class="topic-section" id="section17">
+                <h2>✨ 17. Template Literals & ES6+ <span class="section-badge">Modern Features</span></h2>
+                <p>Template literals (backticks) allow embedded expressions and multi-line strings, one of many ES6+ upgrades to the language.</p>
+                <div class="code-block" data-lang="javascript"><pre>const name = "SyntaxLab";
+const version = 2;
+
+const message = `Welcome to ${name} v${version}!
+Enjoy learning JavaScript.`;
+
+console.log(message);</pre></div>
+                
+                
+            </div>
+
+            <div class="topic-section" id="section18">
+                <h2>🛡️ 18. Error Handling <span class="section-badge">try / catch / finally</span></h2>
+                <p>Use try/catch to gracefully handle runtime errors instead of letting the whole script crash.</p>
+                <div class="code-block" data-lang="javascript"><pre>try {
+  const data = JSON.parse("{ invalid json }");
+} catch (error) {
+  console.log("Caught an error:", error.message);
+} finally {
+  console.log("This always runs.");
+}</pre></div>
+                <div class="output-block"><b>Output:</b><br>Caught an error: ...
+This always runs.</div>
+                
+            </div>
+
 
             <a href="index.html" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
         </main>
     </div>
 </div>
 
-<footer class="footer"><p>© 2026 SyntaxLab | JavaScript - Bring your website to life.</p></footer>
+<footer class="footer"><p>© 2026 RT_SYNTAXTLAB | JavaScript - Bring your website to life.</p></footer>
 <script src="script.js"></script>
 </body>
 </html>

@@ -4,141 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SyntaxLab | Learn CSS - Complete Tutorial</title>
-  <link rel="stylesheet" href="style.css">
+  <title>RT_SYNTAXTLAB | Learn CSS</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    /* Additional styles for better learning experience */
-    .info-box {
-      background: rgba(99, 102, 241, 0.08);
-      border-left: 4px solid #6366f1;
-      padding: 1rem;
-      margin: 1rem 0;
-      border-radius: 12px;
-    }
-
-    .tip-box {
-      background: rgba(16, 185, 129, 0.08);
-      border-left: 4px solid #10b981;
-      padding: 1rem;
-      margin: 1rem 0;
-      border-radius: 12px;
-    }
-
-    .warning-box {
-      background: rgba(245, 158, 11, 0.08);
-      border-left: 4px solid #f59e0b;
-      padding: 1rem;
-      margin: 1rem 0;
-      border-radius: 12px;
-    }
-
-    .comparison-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1rem 0;
-    }
-
-    .comparison-table th {
-      background: #6366f1;
-      color: white;
-      padding: 10px;
-    }
-
-    .comparison-table td {
-      border: 1px solid rgba(99, 102, 241, 0.2);
-      padding: 10px;
-    }
-
-    .practice-card {
-      background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(236, 72, 153, 0.05));
-      border-radius: 16px;
-      padding: 1.2rem;
-      margin: 1.2rem 0;
-      border: 1px solid rgba(99, 102, 241, 0.2);
-    }
-
-    .grid-2col {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-      margin: 1rem 0;
-    }
-
-    @media (max-width: 600px) {
-      .grid-2col {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* Sidebar scrolling styles */
-    .topic-list li {
-      transition: all 0.3s ease;
-      cursor: pointer;
-      padding: 0.8rem 0;
-      border-bottom: 1px solid rgba(99, 102, 241, 0.1);
-      font-size: 0.85rem;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #4a4a6a;
-      font-weight: 500;
-    }
-
-    .topic-list li:hover {
-      color: #6366f1;
-      transform: translateX(8px);
-      background: rgba(99, 102, 241, 0.05);
-      border-radius: 8px;
-      padding-left: 8px;
-    }
-
-    .topic-list li.active-topic {
-      background: rgba(99, 102, 241, 0.15);
-      border-radius: 8px;
-      color: #6366f1;
-      font-weight: 700;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 80px;
-    }
-
-    .topic-section {
-      scroll-margin-top: 90px;
-    }
-
-    kbd {
-      background: #f0f0f0;
-      border-radius: 4px;
-      padding: 2px 6px;
-      font-family: monospace;
-      font-size: 0.85rem;
-      border: 1px solid #ccc;
-    }
-  </style>
 </head>
 
 <body>
 
   <nav class="navbar">
     <div class="nav-container">
-      <div class="logo-area" onclick="location.href='index.html'">
-        <div class="logo-icon"><i class="fab fa-css3-alt"></i></div>
-        <span class="logo-text">SyntaxLab</span>
-      </div>
-      <div class="nav-links">
-        <a href="index.html" class="nav-link">Home</a>
-      </div>
+        <div class="logo-area" onclick="location.href='index.html'">
+            <div class="logo-icon"><img src="logo.svg" alt="RT_SYNTAXTLAB logo"></div>
+            <span class="logo-text">RT_<span>SYNTAXTLAB</span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="html.html" class="nav-link">HTML</a>
+            <a href="css.html" class="nav-link active">CSS</a>
+            <a href="javascript.html" class="nav-link">JavaScript</a>
+            <a href="python.html" class="nav-link">Python</a>
+            <a href="java.html" class="nav-link">Java</a>
+            <a href="php.html" class="nav-link">PHP</a>
+            <a href="c.html" class="nav-link">C</a>
+            <a href="cpp.html" class="nav-link">C++</a>
+            <a href="sql.html" class="nav-link">SQL</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
-  </nav>
+</nav>
 
   <div class="language-container">
     <div class="language-header">
-      <h1>Learn CSS <span class="badge">Complete Tutorial</span></h1>
-      <p class="intro">CSS (Cascading Style Sheets) is the language we use to style HTML elements. Click any topic in
+        <div class="breadcrumb"><a href="index.html">Home</a> / CSS</div>
+        <div class="language-header-inner">
+            <div>
+                <h1><i class="fab fa-css3-alt"></i> Learn CSS <span class="badge">Complete Tutorial</span></h1>
+                <p class="intro">CSS (Cascading Style Sheets) is the language we use to style HTML elements. Click any topic in
         the sidebar to jump directly to that section!</p>
+            </div>
+            <a class="btn btn-outline gfg-source-btn" href="https://www.geeksforgeeks.org/css/css-tutorial/" target="_blank" rel="noopener">
+                <i class="fas fa-external-link-alt"></i> Full Tutorial on GeeksforGeeks
+            </a>
+        </div>
     </div>
 
     <div class="content-grid">
@@ -241,7 +149,7 @@
             </ul>
           </div>
 
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* CSS Example - Styling a webpage */
 body {
     background-color: lightblue;  /* Page background */
@@ -281,7 +189,7 @@ p {
             <code>selector { property: value; }</code>
           </div>
 
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Selector (targets HTML elements) */
 p {
     color: red;           /* Property: value */
@@ -348,7 +256,7 @@ p {
             </tr>
           </table>
 
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Element selector */
 p { color: blue; }
 
@@ -376,14 +284,14 @@ p { color: blue; }
           <div class="grid-2col">
             <div class="info-box">
               <i class="fas fa-external-link-alt"></i> <strong>External CSS (Best Practice)</strong>
-              <div class="code-block">
+              <div class="code-block" data-lang="css">
                 <pre>&lt;link rel="stylesheet" href="styles.css"&gt;</pre>
               </div>
               <p>✓ Reusable across pages<br>✓ Clean HTML<br>✓ Faster loading (cached)</p>
             </div>
             <div class="info-box">
               <i class="fas fa-database"></i> <strong>Internal CSS</strong>
-              <div class="code-block">
+              <div class="code-block" data-lang="css">
                 <pre>&lt;style&gt;
   body { background: #f0f0f0; }
 &lt;/style&gt;</pre>
@@ -392,7 +300,7 @@ p { color: blue; }
             </div>
             <div class="info-box">
               <i class="fas fa-code"></i> <strong>Inline CSS (Highest Priority)</strong>
-              <div class="code-block">
+              <div class="code-block" data-lang="css">
                 <pre>&lt;p style="color: red;"&gt;Text&lt;/p&gt;</pre>
               </div>
               <p>✓ Quick testing<br>✗ Hard to maintain<br>✗ Not reusable</p>
@@ -409,7 +317,7 @@ p { color: blue; }
         <div class="topic-section" id="section5">
           <h2>💬 5. CSS Comments <span class="section-badge">Documentation</span></h2>
           <p>Comments help explain code and temporarily disable styles.</p>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* This is a single-line comment */
 
 /*
@@ -490,7 +398,7 @@ p {
               <td>Responsive text scaling</td>
             </tr>
           </table>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>html { font-size: 16px; }  /* 1rem = 16px */
 h1 { font-size: 2rem; }    /* 32px */
 .container { width: 80%; } /* 80% of parent width */
@@ -511,7 +419,7 @@ h1 { font-size: 2rem; }    /* 32px */
               <li><strong>Margin</strong> - Space outside the border</li>
             </ul>
           </div>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>.box {
     width: 300px;
     padding: 20px;   /* Adds space INSIDE */
@@ -524,7 +432,7 @@ h1 { font-size: 2rem; }    /* 32px */
         <!-- ===== SECTION 9: CSS WIDTH & HEIGHT ===== -->
         <div class="topic-section" id="section9">
           <h2>📐 9. CSS Width & Height <span class="section-badge">Sizing Elements</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>div {
     width: 300px;           /* Fixed width */
     height: 200px;          /* Fixed height */
@@ -539,7 +447,7 @@ h1 { font-size: 2rem; }    /* 32px */
         <!-- ===== SECTION 10: CSS MARGIN ===== -->
         <div class="topic-section" id="section10">
           <h2>⬅️ 10. CSS Margin <span class="section-badge">Space Outside</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* All four sides */
 margin: 10px;
 
@@ -564,7 +472,7 @@ margin: 0 auto;  /* Centers block elements */</pre>
         <!-- ===== SECTION 11: CSS PADDING ===== -->
         <div class="topic-section" id="section11">
           <h2>📏 11. CSS Padding <span class="section-badge">Space Inside</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* All four sides */
 padding: 10px;
 
@@ -586,7 +494,7 @@ padding-left: 40px;</pre>
         <!-- ===== SECTION 12: CSS BORDER ===== -->
         <div class="topic-section" id="section12">
           <h2>🖌️ 12. CSS Border <span class="section-badge">The Edge</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Shorthand: width style color */
 border: 2px solid black;
 
@@ -607,7 +515,7 @@ border-radius: 50%;            /* Circle */</pre>
         <!-- ===== SECTION 13: CSS OUTLINE ===== -->
         <div class="topic-section" id="section13">
           <h2>🔲 13. CSS Outline <span class="section-badge">Outside Border</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Outline doesn't affect layout */
 outline: 2px solid red;
 outline-width: 3px;
@@ -621,7 +529,7 @@ outline-offset: 5px;  /* Space between border and outline */</pre>
         <!-- ===== SECTION 14: CSS BOX-SIZING ===== -->
         <div class="topic-section" id="section14">
           <h2>📦 14. CSS Box-Sizing <span class="section-badge">Life-Changing!</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Default - content-box */
 .box {
     width: 300px;
@@ -648,7 +556,7 @@ outline-offset: 5px;  /* Space between border and outline */</pre>
         <!-- ===== SECTION 15: CSS BACKGROUNDS ===== -->
         <div class="topic-section" id="section15">
           <h2>🖼️ 15. CSS Backgrounds <span class="section-badge">Visual Depth</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>body {
     background-color: #f0f0f0;           /* Solid color */
     background-image: url('pattern.png'); /* Image */
@@ -664,7 +572,7 @@ outline-offset: 5px;  /* Space between border and outline */</pre>
         <!-- ===== SECTION 16: CSS GRADIENTS ===== -->
         <div class="topic-section" id="section16">
           <h2>🌈 16. CSS Gradients <span class="section-badge">Smooth Transitions</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Linear Gradient */
 .gradient1 {
     background: linear-gradient(to right, red, blue);
@@ -693,7 +601,7 @@ outline-offset: 5px;  /* Space between border and outline */</pre>
         <!-- ===== SECTION 17: CSS TEXT EFFECTS ===== -->
         <div class="topic-section" id="section17">
           <h2>✍️ 17. CSS Text Effects <span class="section-badge">Typography Magic</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Text Overflow (ellipsis) */
 .ellipsis {
     white-space: nowrap;
@@ -719,7 +627,7 @@ outline-offset: 5px;  /* Space between border and outline */</pre>
         <!-- ===== SECTION 18: CSS FONTS ===== -->
         <div class="topic-section" id="section18">
           <h2>🔤 18. CSS Fonts <span class="section-badge">Typography</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans');
 
@@ -742,7 +650,7 @@ body {
         <!-- ===== SECTION 19: CSS ICONS ===== -->
         <div class="topic-section" id="section19">
           <h2>⭐ 19. CSS Icons <span class="section-badge">Visual Elements</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>&lt;!-- Font Awesome (most popular) --&gt;
 &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"&gt;
 
@@ -761,7 +669,7 @@ i {
         <!-- ===== SECTION 20: CSS SHADOWS ===== -->
         <div class="topic-section" id="section20">
           <h2>🌑 20. CSS Shadows <span class="section-badge">Depth & Dimension</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Box Shadow: offset-x | offset-y | blur-radius | spread-radius | color */
 .card {
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
@@ -779,7 +687,7 @@ h1 {
         <!-- ===== SECTION 21: CSS OPACITY ===== -->
         <div class="topic-section" id="section21">
           <h2>👁️ 21. CSS Opacity <span class="section-badge">Transparency</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>img {
     opacity: 0.5;  /* 50% transparent */
 }
@@ -802,7 +710,7 @@ img:hover {
         <!-- ===== SECTION 22: CSS LINKS ===== -->
         <div class="topic-section" id="section22">
           <h2>🔗 22. CSS Links <span class="section-badge">Interactive States</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Order matters: LVHA */
 a:link {
     color: blue;           /* Unvisited link */
@@ -835,7 +743,7 @@ a.button:hover {
         <!-- ===== SECTION 23: CSS LISTS ===== -->
         <div class="topic-section" id="section23">
           <h2>📋 23. CSS Lists <span class="section-badge">Bullet Styling</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>ul {
     list-style-type: square;        /* disc, circle, square, none */
     list-style-image: url('bullet.png');
@@ -858,7 +766,7 @@ a.button:hover {
         <!-- ===== SECTION 24: CSS TABLES ===== -->
         <div class="topic-section" id="section24">
           <h2>📊 24. CSS Tables <span class="section-badge">Data Presentation</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>table {
     border-collapse: collapse;   /* Single borders */
     width: 100%;
@@ -895,7 +803,7 @@ tr:hover {
         <!-- ===== SECTION 25: CSS FORMS ===== -->
         <div class="topic-section" id="section25">
           <h2>📝 25. CSS Forms <span class="section-badge">User Input</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>input[type=text], input[type=email], textarea, select {
     width: 100%;
     padding: 12px;
@@ -931,7 +839,7 @@ input:invalid {
         <!-- ===== SECTION 26: CSS BUTTONS ===== -->
         <div class="topic-section" id="section26">
           <h2>🔘 26. CSS Buttons <span class="section-badge">Interactive Elements</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>.btn {
     background: #6366f1;
     color: white;
@@ -967,7 +875,7 @@ input:invalid {
         <!-- ===== SECTION 27: CSS IMAGES ===== -->
         <div class="topic-section" id="section27">
           <h2>🖼️ 27. CSS Images Styling <span class="section-badge">Visual Effects</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Rounded images */
 img {
     border-radius: 50%;  /* Circle */
@@ -1002,7 +910,7 @@ img:hover {
         <!-- ===== SECTION 28: CSS DISPLAY ===== -->
         <div class="topic-section" id="section28">
           <h2>👁️ 28. CSS Display <span class="section-badge">Box Behavior</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Block - takes full width, starts new line */
 .block {
     display: block;
@@ -1065,7 +973,7 @@ img:hover {
               <td>top, right, bottom, left</td>
             </tr>
           </table>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Fixed header */
 .header {
     position: fixed;
@@ -1094,7 +1002,7 @@ img:hover {
         <!-- ===== SECTION 30: CSS Z-INDEX ===== -->
         <div class="topic-section" id="section30">
           <h2>📚 30. CSS Z-index <span class="section-badge">Stack Order</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Higher number = on top */
 .box1 {
     position: absolute;
@@ -1116,7 +1024,7 @@ img:hover {
         <!-- ===== SECTION 31: CSS OVERFLOW ===== -->
         <div class="topic-section" id="section31">
           <h2>🌊 31. CSS Overflow <span class="section-badge">Content Handling</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>.container {
     width: 300px;
     height: 200px;
@@ -1133,7 +1041,7 @@ img:hover {
         <!-- ===== SECTION 32: CSS FLOAT ===== -->
         <div class="topic-section" id="section32">
           <h2>⛵ 32. CSS Float <span class="section-badge">Classic Layout</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>img {
     float: right;   /* Images floats right, text wraps left */
     margin: 10px;
@@ -1158,7 +1066,7 @@ img:hover {
         <!-- ===== SECTION 33: CSS INLINE-BLOCK ===== -->
         <div class="topic-section" id="section33">
           <h2>📐 33. CSS Inline-block <span class="section-badge">Best of Both</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>.nav-item {
     display: inline-block;
     width: 100px;
@@ -1179,7 +1087,7 @@ nav li {
         <!-- ===== SECTION 34: CSS COMBINATORS ===== -->
         <div class="topic-section" id="section34">
           <h2>⚡ 34. CSS Combinators <span class="section-badge">Relationships</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Descendant selector (space) - ALL descendants */
 div p {
     color: red;
@@ -1205,7 +1113,7 @@ h1 ~ p {
         <!-- ===== SECTION 35: CSS ATTRIBUTE SELECTORS ===== -->
         <div class="topic-section" id="section35">
           <h2>🏷️ 35. CSS Attribute Selectors <span class="section-badge">Powerful Filtering</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Has attribute */
 a[target] {
     background: yellow;
@@ -1236,7 +1144,7 @@ a[href*="w3schools"] {
         <!-- ===== SECTION 36: CSS PSEUDO-CLASSES ===== -->
         <div class="topic-section" id="section36">
           <h2>⏰ 36. CSS Pseudo-classes <span class="section-badge">Element States</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Link states */
 a:link, a:visited, a:hover, a:active
 
@@ -1263,7 +1171,7 @@ input:invalid { }
         <!-- ===== SECTION 37: CSS PSEUDO-ELEMENTS ===== -->
         <div class="topic-section" id="section37">
           <h2>✨ 37. CSS Pseudo-elements <span class="section-badge">Virtual Elements</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* First line of text */
 p::first-line {
     font-weight: bold;
@@ -1304,7 +1212,7 @@ input::placeholder {
         <!-- ===== SECTION 38: CSS TRANSITIONS ===== -->
         <div class="topic-section" id="section38">
           <h2>🔄 38. CSS Transitions <span class="section-badge">Smooth Changes</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>.button {
     background: blue;
     transition-property: all;
@@ -1330,7 +1238,7 @@ input::placeholder {
         <!-- ===== SECTION 39: CSS ANIMATIONS ===== -->
         <div class="topic-section" id="section39">
           <h2>🎬 39. CSS Animations <span class="section-badge">Complex Movements</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Define keyframes */
 @keyframes slide {
     0% {
@@ -1368,7 +1276,7 @@ input::placeholder {
         <!-- ===== SECTION 40: CSS 2D TRANSFORMS ===== -->
         <div class="topic-section" id="section40">
           <h2>🔄 40. CSS 2D Transforms <span class="section-badge">Manipulate Elements</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>.box {
     transition: transform 0.3s;
 }
@@ -1391,7 +1299,7 @@ input::placeholder {
         <!-- ===== SECTION 41: CSS 3D TRANSFORMS ===== -->
         <div class="topic-section" id="section41">
           <h2>🧊 41. CSS 3D Transforms <span class="section-badge">Three Dimensions</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* 3D rotate */
 .card {
     transform: rotateX(30deg);   /* Tilt forward/back */
@@ -1418,7 +1326,7 @@ input::placeholder {
         <!-- ===== SECTION 42: CSS FLEXBOX ===== -->
         <div class="topic-section" id="section42">
           <h2>💪 42. CSS Flexbox <span class="section-badge">1D Layout Master</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>.container {
     display: flex;
     flex-direction: row | column | row-reverse | column-reverse;
@@ -1450,7 +1358,7 @@ input::placeholder {
         <!-- ===== SECTION 43: CSS GRID ===== -->
         <div class="topic-section" id="section43">
           <h2>📐 43. CSS Grid <span class="section-badge">2D Layout System</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>.grid {
     display: grid;
     grid-template-columns: 200px 1fr 200px;   /* Fixed, flexible, fixed */
@@ -1487,7 +1395,7 @@ input::placeholder {
         <!-- ===== SECTION 44: MEDIA QUERIES ===== -->
         <div class="topic-section" id="section44">
           <h2>📱 44. Media Queries <span class="section-badge">Responsive Design</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Mobile First (small to large) */
 .container {
     grid-template-columns: 1fr;
@@ -1525,7 +1433,7 @@ input::placeholder {
         <!-- ===== SECTION 45: RESPONSIVE GRID ===== -->
         <div class="topic-section" id="section45">
           <h2>📲 45. Responsive Grid <span class="section-badge">12-Column System</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>.row::after {
     content: "";
     clear: both;
@@ -1562,7 +1470,7 @@ input::placeholder {
         <!-- ===== SECTION 46: RESPONSIVE IMAGES ===== -->
         <div class="topic-section" id="section46">
           <h2>🖼️ 46. Responsive Images <span class="section-badge">Adapt to Screen</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Fluid images */
 img {
     max-width: 100%;
@@ -1586,7 +1494,7 @@ img {
         <!-- ===== SECTION 47: CSS VARIABLES ===== -->
         <div class="topic-section" id="section47">
           <h2>🎯 47. CSS Variables <span class="section-badge">Custom Properties</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Declare variables */
 :root {
     --primary-color: #6366f1;
@@ -1653,7 +1561,7 @@ element.style.setProperty('--primary-color', 'red');</pre>
               <td>*</td>
             </tr>
           </table>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* More specific = higher priority */
 p { color: black; }           /* Score: 1 */
 .text { color: blue; }        /* Score: 10 (wins) */
@@ -1668,7 +1576,7 @@ p { color: blue; }  /* Wins */</pre>
         <!-- ===== SECTION 49: CSS !IMPORTANT ===== -->
         <div class="topic-section" id="section49">
           <h2>⚠️ 49. CSS !important <span class="section-badge">Nuclear Option</span></h2>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Overrides EVERYTHING */
 p {
     color: red !important;
@@ -1699,7 +1607,7 @@ p {
             <div class="info-box"><i class="fas fa-moon"></i> <strong>4. Reduce
                 Motion</strong><br><code>@media (prefers-reduced-motion: reduce) { * { animation: none; } }</code></div>
           </div>
-          <div class="code-block">
+          <div class="code-block" data-lang="css">
             <pre>/* Good focus styles */
 button:focus, a:focus, input:focus {
     outline: 3px solid #6366f1;
@@ -1740,178 +1648,8 @@ button:focus, a:focus, input:focus {
     </div>
   </div>
 
-  <footer class="footer">
-    <p>© 2025 SyntaxLab | Complete CSS Tutorial - 50+ Topics with Detailed Explanations</p>
-  </footer>
+  <footer class="footer"><p>© 2026 RT_SYNTAXTLAB | Complete CSS Tutorial — 50+ topics with detailed explanations.</p></footer>
 
   <script src="script.js"></script>
-<script>
-    // ===== FULL SCROLLING FUNCTIONALITY FOR ALL TOPICS =====
-    (function() {
-        // Get all topic list items and sections
-        const topicItems = document.querySelectorAll('.topic-list li');
-        const sections = document.querySelectorAll('.topic-section');
-        
-        // Function to scroll to specific section
-        function scrollToSection(sectionId) {
-            const targetSection = document.getElementById(sectionId);
-            if (targetSection) {
-                // Smooth scroll to the section
-                targetSection.scrollIntoView({ 
-                    behavior: 'smooth', 
-                    block: 'start',
-                    inline: 'nearest'
-                });
-                
-                // Add highlight effect to the section
-                targetSection.style.transition = 'background 0.3s ease, padding 0.3s ease';
-                targetSection.style.background = 'rgba(99, 102, 241, 0.08)';
-                targetSection.style.borderRadius = '16px';
-                targetSection.style.paddingLeft = '20px';
-                
-                setTimeout(() => {
-                    targetSection.style.background = '';
-                    targetSection.style.paddingLeft = '';
-                }, 1000);
-                
-                // Update active topic in sidebar
-                updateActiveTopic(sectionId);
-                
-                // Optional: Update URL hash without jumping
-                history.pushState(null, null, `#${sectionId}`);
-            }
-        }
-        
-        // Function to update active topic highlight in sidebar
-        function updateActiveTopic(activeSectionId) {
-            topicItems.forEach(item => {
-                const targetId = item.getAttribute('data-target');
-                if (targetId === activeSectionId) {
-                    item.classList.add('active-topic');
-                } else {
-                    item.classList.remove('active-topic');
-                }
-            });
-        }
-        
-        // Add click event listeners to all topic items
-        topicItems.forEach(item => {
-            item.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('data-target');
-                if (targetId) {
-                    scrollToSection(targetId);
-                }
-            });
-        });
-        
-        // Intersection Observer to highlight active topic while scrolling
-        const observerOptions = {
-            threshold: 0.5,
-            rootMargin: '-80px 0px -80px 0px'
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const sectionId = entry.target.getAttribute('id');
-                    if (sectionId) {
-                        updateActiveTopic(sectionId);
-                    }
-                }
-            });
-        }, observerOptions);
-        
-        // Observe all sections
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-        
-        // Check URL hash on page load and scroll to that section
-        if (window.location.hash) {
-            const hashId = window.location.hash.substring(1);
-            const targetSection = document.getElementById(hashId);
-            if (targetSection) {
-                setTimeout(() => {
-                    scrollToSection(hashId);
-                }, 100);
-            }
-        }
-        
-        // Add keyboard navigation (Alt + 1-9 for first 9 sections)
-        document.addEventListener('keydown', function(e) {
-            if (e.altKey && e.key >= '1' && e.key <= '9') {
-                e.preventDefault();
-                const index = parseInt(e.key) - 1;
-                if (sections[index]) {
-                    scrollToSection(sections[index].getAttribute('id'));
-                }
-            }
-        });
-        
-        // Console log to confirm scrolling is working
-        console.log('✅ CSS Page Loaded - Scrolling functionality active for all 50+ topics!');
-        
-        // Add a small toast notification on first visit
-        if (!sessionStorage.getItem('css_scroll_toast_shown')) {
-            const toast = document.createElement('div');
-            toast.innerHTML = `
-                <div style="position: fixed; bottom: 80px; right: 20px; background: #6366f1; color: white; 
-                            padding: 10px 18px; border-radius: 40px; font-size: 0.8rem; z-index: 9999;
-                            box-shadow: 0 2px 10px rgba(0,0,0,0.2); animation: fadeOut 3s forwards;">
-                    <i class="fas fa-mouse-pointer"></i> Click any topic to scroll!
-                </div>
-                <style>
-                    @keyframes fadeOut {
-                        0% { opacity: 1; transform: translateX(0); }
-                        70% { opacity: 1; }
-                        100% { opacity: 0; transform: translateX(20px); display: none; }
-                    }
-                </style>
-            `;
-            document.body.appendChild(toast);
-            setTimeout(() => toast.remove(), 3500);
-            sessionStorage.setItem('css_scroll_toast_shown', 'true');
-        }
-        
-        // AUTO-RESET PROGRESS FUNCTION
-        const pageKey = 'css.html';
-        const storageKey = `syntaxlab_viewed_${pageKey}`;
-        const sessionFlag = sessionStorage.getItem(`syntaxlab_session_${pageKey}`);
-        
-        if (!sessionFlag) {
-            localStorage.removeItem(storageKey);
-            const topics = document.querySelectorAll('.topic-section');
-            topics.forEach(topic => topic.classList.remove('viewed'));
-            const progressFill = document.querySelector('.progress-fill');
-            const percentSpan = document.querySelector('.progress-percent');
-            if (progressFill) {
-                progressFill.style.width = '0%';
-                if (percentSpan) percentSpan.innerText = '0%';
-            }
-            sessionStorage.setItem(`syntaxlab_session_${pageKey}`, 'visited');
-        }
-        
-        const resetBtn = document.getElementById('hardResetBtn');
-        if (resetBtn) {
-            resetBtn.addEventListener('click', function() {
-                localStorage.removeItem(storageKey);
-                sessionStorage.removeItem(`syntaxlab_session_${pageKey}`);
-                const topics = document.querySelectorAll('.topic-section');
-                topics.forEach(topic => topic.classList.remove('viewed'));
-                const progressFill = document.querySelector('.progress-fill');
-                const percentSpan = document.querySelector('.progress-percent');
-                if (progressFill) {
-                    progressFill.style.width = '0%';
-                    if (percentSpan) percentSpan.innerText = '0%';
-                }
-                const resetToast = document.createElement('div');
-                resetToast.innerHTML = `<div style="position:fixed;bottom:20px;right:20px;background:#1e1e2e;color:white;padding:12px 20px;border-radius:12px;z-index:9999;">🔄 All progress reset to 0%! Start fresh.</div>`;
-                document.body.appendChild(resetToast);
-                setTimeout(() => resetToast.remove(), 2000);
-            });
-        }
-    })();
-</script>
 </body>
 </html>
