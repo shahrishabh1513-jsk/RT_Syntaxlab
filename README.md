@@ -18,7 +18,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1200&color=10B981&center=true&vCenter=true&width=760&lines=9+Languages+%C2%B7+150%2B+Topics+%C2%B7+200%2B+Examples;HTML+CSS+JavaScript+Python+Java+PHP+C+C%2B%2B+SQL;Bite-Sized+Lessons+with+Runnable+Code;Progress+Saved+Right+in+Your+Browser" alt="Typing SVG" />
 
-<br/><br/>
+<br/>
 
 <a href="https://shahrishabh1513-jsk.github.io/RT_Syntaxlab/"><img src="https://img.shields.io/badge/LIVE_DEMO-Start_Learning-6366F1?style=for-the-badge&logo=googlechrome&logoColor=white"/></a>
 <a href="https://github.com/shahrishabh1513-jsk/RT_Syntaxlab"><img src="https://img.shields.io/badge/REPOSITORY-View_Code-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
