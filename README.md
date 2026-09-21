@@ -31,7 +31,7 @@
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
 <img src="https://img.shields.io/badge/GitHub_Pages-222?style=for-the-badge&logo=github&logoColor=white"/>
 
-<br/><br/>
+<br/>
 
 <img src="https://img.shields.io/github/last-commit/shahrishabh1513-jsk/RT_Syntaxlab?style=flat-square&color=6366F1&label=Last%20Updated"/>
 <img src="https://img.shields.io/badge/Status-Live%20✅-brightgreen?style=flat-square"/>
@@ -41,7 +41,7 @@
 
 </div>
 
-<br/><br/>
+<br/>
 
 <table align="center">
 <tr>
